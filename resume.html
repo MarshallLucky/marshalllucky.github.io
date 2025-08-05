@@ -11,24 +11,65 @@
     ul { list-style-type: disc; padding-left: 20px; }
     .section { margin-bottom: 20px; }
     .contact-form { margin-top: 20px; border: 1px solid #ccc; padding: 10px; }
+    .ghost { color: lightgray; /* Or #A9A9A9 common ghost gray */ }
+    /* Authentication form styles */
+    .auth-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .auth-box {
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .error {
+      color: red;
+      display: none;
+    }
+    /* Hide resume content initially */
+    #resume-content {
+      display: none;
+    }
+    ul ul {
+      margin-left: 20px; /* Adjust indentation for sublists */
+      list-style-type: circle; /* Different bullet style for sublists */
+    }
+
   </style>
-  <style> .ghost {color: lightgray; /* Or #A9A9A9 common ghost gray */} </style>
 </head>
 <body>
 
+  <!-- <noscript> for Non-JavaScript users: -->
+  <noscript>
+    <p style="color: red; text-align: center;">JavaScript is required to access this page. Please enable JavaScript in your browser.</p>
+  </noscript>
 
-<script>
-    var username = prompt('Enter username:');
-    var password = prompt('Enter password:');
+  <!-- Authentication form -->
+  <div class="auth-container" id="auth-container">
+    <div class="auth-box">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username" aria-label="Username" /><br><br>
+      <input type="password" id="password" placeholder="Password" aria-label="Password" /><br><br>
+      <button type="button" onclick="authenticate()">Submit</button>
+      <p id="error" class="error">Invalid username or password</p>
+    </div>
+  </div>
 
-    if (username !== 'guest' || password !== 'D0pW01wA5z3jB') {
-      window.location.href = 'about:blank';
-    }
-  </script>
-
-
+<div id="resume-content">
   <h1>Todd Story, PhD, MS</h1>
-  <p><strong>Contact:</strong> storytodd@gmail.com | 1-704-236-2366 | Fort Mill, SC <br> GitHub: MarshallLucky <br> LinkedIn: https://www.linkedin.com/in/todd-story-b0b3b491/</p>
+  <p><strong>Contact:</strong> storytodd@gmail.com | 1-704-236-2366 | Fort Mill, SC 
+    <br> <strong>GitHub</strong>: MarshallLucky 
+    <br> <strong>LinkedIn</strong>: https://www.linkedin.com/in/todd-story-b0b3b491/
+  </p>
 
   <div class="section">
     <h2>About</h2>
@@ -44,12 +85,12 @@
 
 
       <li><strong>Wells Fargo</strong> <span class="ghost">&larr;Wachovia&larr;First Union</span>
-      <br><u><em>Charlotte, NC, Served in various roles:</em></u> 
+      <br><u><em>Charlotte, NC May 2001 - August 2023. Served in various roles:</em></u> 
       <ul>
-        <li><strong>Director of Computational Library: </strong><em>June 2019 - August 2023. </em> 
+        <li><strong>Director of Computational Library: </strong><em>June 2022 - August 2023. </em> 
           <br>Part of Model Validation, coordinated the development of the group's code base.</li>
 
-        <li><strong>Model Validation: </strong><em>May 2006 to June 2019</em>
+        <li><strong>Model Validation: </strong><em>May 2006 to June 2022</em>
         <br>Risk management position that specialized in model risk.  This involved quantitative testing and writing technical documents for consumption by federal regulators. </li>
 
         <li><strong>Trader & Modeling Liaison: </strong><em>May 2005 to May 2006</em>
@@ -80,15 +121,6 @@
 
   <div class="section">
     <h2>Certifications and Courses</h2>
-    <style>
-      ul {
-        list-style-type: disc; /* Default bullet style for main list */
-      }
-      ul ul {
-        margin-left: 20px; /* Adjust indentation for sublists */
-        list-style-type: circle; /* Different bullet style for sublists */
-      }
-    </style>
 
     <ul>
 
@@ -134,19 +166,36 @@
         <br><u>Artificial Intelligence</u>: LLMs (e.g., "vibe" programming), machine learning, deep learning.
       </li>
       <li><strong>Experienced Modeller</strong>  
-        <br>Machine learning, statistical modeling, Monte Carlo simulations, optimization, stochastic calculus, fluid dynamics</li>
+        <br>Machine learning, statistical modeling, Monte Carlo simulations, optimization, stochastic calculus, fluid dynamics, various.</li>
       <li><strong>Technical Writer</strong>  
         <br>Publication list available on request.</li>
+    </ul>
   </div>
+</div>
 
-  <div class="contact-form">
-    <h2>Request Access</h2>
-    <form action="https://formspree.io/your@email.com" method="POST">
-      <label>Name: <input type="text" name="name"></label><br>
-      <label>Email: <input type="email" name="email"></label><br>
-      <input type="submit" value="Submit">
-    </form>
-  </div>
+  <script>
+    function authenticate() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const error = document.getElementById('error');
+      const authContainer = document.getElementById('auth-container');
+      const resumeContent = document.getElementById('resume-content');
+
+      if (username === 'guest' && password === 'D0pW01w@A5#z3jB') {
+        authContainer.style.display = 'none'; // Hide login form
+        resumeContent.style.display = 'block'; // Show resume content
+      } else {
+        error.style.display = 'block'; // Show error message
+      }
+    }
+
+    // Optional: Allow Enter key to trigger authentication
+    document.addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        authenticate();
+      }
+    });
+  </script>
 
 </body>
 </html>
