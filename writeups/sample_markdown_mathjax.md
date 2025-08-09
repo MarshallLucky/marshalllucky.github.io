@@ -37,6 +37,8 @@ Experienced data scientist with a passion for machine learning and mathematical 
 
 ## Neural Network Backpropagation Derivation
 
+Inline: $a^2$. Display: $$\int_0^1 x\,dx=\tfrac12.$$
+
 Consider a simple feedforward neural network with one hidden layer. Let the input be \( \mathbf{x} \), hidden layer weights \( \mathbf{W}^{(1)} \), output weights \( \mathbf{W}^{(2)} \), and target output \( \mathbf{y} \).
 
 The forward pass:
