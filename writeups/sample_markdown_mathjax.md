@@ -39,25 +39,25 @@ Experienced data scientist with a passion for machine learning and mathematical 
 
 Inline: $a^2$. Display: $$\int_0^1 x\,dx=\tfrac12.$$
 
-Consider a simple feedforward neural network with one hidden layer. Let the input be \( \mathbf{x} \), hidden layer weights \( \mathbf{W}^{(1)} \), output weights \( \mathbf{W}^{(2)} \), and target output \( \mathbf{y} \).
+Consider a simple feedforward neural network with one hidden layer. Let the input be $ \mathbf{x} $, hidden layer weights $ \mathbf{W}^{(1)} $, output weights $ \mathbf{W}^{(2)} $, and target output $ \mathbf{y} $.
 
 The forward pass:
-- Hidden activation: \( \mathbf{z} = \mathbf{W}^{(1)} \mathbf{x} \)
-- Hidden output: \( \mathbf{h} = \sigma(\mathbf{z}) \) where \( \sigma \) is the sigmoid function: \( \sigma(z) = \frac{1}{1 + e^{-z}} \)
-- Output: \( \hat{\mathbf{y}} = \mathbf{W}^{(2)} \mathbf{h} \)
+- Hidden activation: $ \mathbf{z} = \mathbf{W}^{(1)} \mathbf{x} $
+- Hidden output: $ \mathbf{h} = \sigma(\mathbf{z}) $ where $ \sigma $ is the sigmoid function: $ \sigma(z) = \frac{1}{1 + e^{-z}} $
+- Output: $ \hat{\mathbf{y}} = \mathbf{W}^{(2)} \mathbf{h} $
 
-The loss function (mean squared error): \( L = \frac{1}{2} \| \mathbf{y} - \hat{\mathbf{y}} \|^2 \)
+The loss function (mean squared error): $ L = \frac{1}{2} \| \mathbf{y} - \hat{\mathbf{y}} \|^2 $
 
 Backpropagation gradients:
 
 For output weights:
-\[ \frac{\partial L}{\partial \mathbf{W}^{(2)}} = (\hat{\mathbf{y}} - \mathbf{y}) \mathbf{h}^T \]
+$$ \frac{\partial L}{\partial \mathbf{W}^{(2)}} = (\hat{\mathbf{y}} - \mathbf{y}) \mathbf{h}^T $$
 
 For hidden weights:
-\[ \delta = (\hat{\mathbf{y}} - \mathbf{y})^T \mathbf{W}^{(2)} \cdot \sigma'(\mathbf{z}) \]
-\[ \frac{\partial L}{\partial \mathbf{W}^{(1)}} = \delta^T \mathbf{x} \]
+$$ \delta = (\hat{\mathbf{y}} - \mathbf{y})^T \mathbf{W}^{(2)} \cdot \sigma'(\mathbf{z}) $$
+$$ \frac{\partial L}{\partial \mathbf{W}^{(1)}} = \delta^T \mathbf{x} $$
 
-Where \( \sigma'(z) = \sigma(z) (1 - \sigma(z)) \).
+Where $ \sigma'(z) = \sigma(z) (1 - \sigma(z)) $.
 
 This derivation showcases the chain rule in action for gradient descent optimization.
 
