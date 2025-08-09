@@ -1,6 +1,6 @@
 ---
 title: Sample Resume with Math Showcase
-permalink: /
+layout: default
 ---
 
 # John Doe's Resume
