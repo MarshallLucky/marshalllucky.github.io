@@ -1,6 +1,7 @@
 ---
 title: Basic Thermodynamics
 layout: default
+permalink: /writeups/nernst_derivation_with_gibbs_discussion/
 ---
 
 # Gibbs Free Energy
