@@ -7,12 +7,14 @@
     <title>Todd's Resume and Other Work</title>
     <!-- Optional: Add CSS for styling -->
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { text-align: center; }
-        ul { list-style-type: none; padding: 0; text-align: center; }
-        li { margin: 10px 0; }
-        a { text-decoration: none; color: blue; }
-        a:hover { text-decoration: underline; }
+      body { font-family: Arial, sans-serif; margin: 24px; }
+      h1 { margin: 0 0 12px 0; }       /* left by default */
+      p  { margin: 0 0 12px 0; }
+      ul { list-style: disc; padding-left: 20px; margin: 8px 0; }          /* left, indented */
+      ul ul { list-style: circle; padding-left: 22px; margin-top: 6px; }   /* second level */
+      li { margin: 6px 0; }
+      a  { text-decoration: none; }
+      a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -21,15 +23,22 @@
     <ul>
 
     <li><a href="resume.html">View My Resume</a></li>
-    <li><a href="{{ '/writeups/sample_markdown_mathjax/' | relative_url }}">View Sample Doc with Math Derivations</a></li>
-    <li><a href="{{ '/writeups/nernst_derivation_with_gibbs_discussion/' | relative_url }}">Discussion of Basic Thermodynamics</a></li>
-    
-        <!-- <li><a href="writeups/sample_markdown_mathjax">View Sample Doc with Math Derivations</a></li> --> 
 
-        <!-- Add this for Markdown/Jekyll 
-        Or use: <li><a href="sample.html">View Sample Doc with Math Derivations</a></li> for HTML -->
+    <li> Writeups
+        <ul>
+        <li><a href="{{ '/writeups/sample_markdown_mathjax/' | relative_url }}">View Sample Doc with Math Derivations</a></li>
+        
+        <li>Thermodynamics Notes
+        <li><a href="{{ '/writeups/nernst_derivation_with_gibbs_discussion/' | relative_url }}">Discussion of Basic Thermodynamics</a></li>
+        </li>
+            <!-- <li><a href="writeups/sample_markdown_mathjax">View Sample Doc with Math Derivations</a></li> --> 
 
-        <!-- Add more links as needed, e.g., <li><a href="certificates/ml-cert">Machine Learning Certificate</a></li> -->
+            <!-- Add this for Markdown/Jekyll 
+            Or use: <li><a href="sample.html">View Sample Doc with Math Derivations</a></li> for HTML -->
+
+            <!-- Add more links as needed, e.g., <li><a href="certificates/ml-cert">Machine Learning Certificate</a></li> -->
+        </ul>
+    </li>
     </ul>
 </body>
 </html>
