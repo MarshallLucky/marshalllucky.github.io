@@ -1,6 +1,7 @@
 ---
 title: Sample Resume with Math Showcase
 layout: default
+permalink: /writeups/sample_markdown_mathjax/
 ---
 
 # John Doe's Resume
