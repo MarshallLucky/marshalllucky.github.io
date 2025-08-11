@@ -60,8 +60,32 @@ $$
 \Delta\mu = R\cdot T \cdot \ln\left( \frac{[C^{\text{outside}}]}{[C^{\text{inside}}]} \right)
 $$
 
+#### Electrical Potential
+ 
+Similarly, the electric potential of an ionic species is:
 
- concentrations of various species.  The concentration of each respective ion species differs from one side of the membrane to the other (and from the other species in general, but that is not what we are talking about).  Strictly, the membrane or "wall" or "barrier" does not have to be biological but it is one context in which the NP is encountered.  
+$$
+\mu_{\text{electric}} = z\cdot F\cdot \psi
+$$
+but it is the potential difference that is relevant:
+
+$$
+\begin{align*}
+\Delta\mu_{\text{electric}} &= z\cdot F\cdot \psi_{\text{outside}} -  z\cdot F\cdot \psi_{\text{inside}}\\
+                            &= z\cdot F\cdot \left(psi_{\text{inside}} \right)\\
+0 &= \Delta\mu_{\text{chem}} + \Delta\mu_{\text{elec}}
+\end{align*}
+$$  
+
+#### Equilibrium
+
+\begin{align*}
+\Delta\mu_{\text{chem}} &= RT \ln\frac{C_{\text{out}}}{C_{\text{in}}} \\
+\Delta\mu_{\text{elec}} &= zF\left( \psi_{\text{out}} - \psi_{\text{in}} \right) \\
+0 &= \Delta\mu_{\text{chem}} + \Delta\mu_{\text{elec}}
+\end{align*}
+
+
 
 The ion species in question is by definition charged.  If it was not charged and if the membrane was permeable to that species then diffusion would equalize the concentrations on either side.  However, these are ions and the are charged
 
