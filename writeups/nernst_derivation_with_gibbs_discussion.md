@@ -67,42 +67,34 @@ Similarly, the electric potential of an ionic species is:
 $$
 \mu_{\text{electric}} = z\cdot F\cdot \psi
 $$
+
 but it is the potential difference that is relevant:
 
 $$
 \begin{align*}
 \Delta\mu_{\text{electric}} &= z\cdot F\cdot \psi_{\text{outside}} -  z\cdot F\cdot \psi_{\text{inside}}\\
-                            &= z\cdot F\cdot \left(psi_{\text{inside}} \right)\\
-0 &= \Delta\mu_{\text{chem}} + \Delta\mu_{\text{elec}}
+                            &= z\cdot F\cdot \left(\psi_{\text{outside}-\psi_{\text{inside}} \right)\\
 \end{align*}
-$$  
+$$ 
 
 #### Equilibrium
+Equilibrium corresponds to equal chemical and electrical potentials:
 
-\begin{align*}
-\Delta\mu_{\text{chem}} &= RT \ln\frac{C_{\text{out}}}{C_{\text{in}}} \\
-\Delta\mu_{\text{elec}} &= zF\left( \psi_{\text{out}} - \psi_{\text{in}} \right) \\
-0 &= \Delta\mu_{\text{chem}} + \Delta\mu_{\text{elec}}
-\end{align*}
+$$
+\Delta\mu_{\text{electrical}} = \Delta\mu_{\text{chemical}}
+$$
 
+so that
 
+$$
+z\cdot F\cdot \left(\psi_{\text{outside}-\psi_{\text{inside}} \right) = R\cdot T \cdot \ln\left( \frac{[C^{\text{outside}}]}{[C^{\text{inside}}]} \right)
+$$ 
 
-The ion species in question is by definition charged.  If it was not charged and if the membrane was permeable to that species then diffusion would equalize the concentrations on either side.  However, these are ions and the are charged
+and finally identifying the electric potential difference as the Nernst Potential:
 
-From a thermodynamic perspective, in the absence of opposing forces,we would expect ions to move across the  membrane (when channels exist that facilitate this)
-
-The **Nernst Potential** corresponds to 
-
-there is a chemical potential inside and another outside and there is their difference.  similarly for the electrical potential, there is a difference.  these potential difference, chemical and electrical, are opposing.  when the chemical potential difference between the two sides equals the electrical potential difference between the two sides, this is the definition of equilibrium and the electrical potential in that state is the so-called Nernst potential, no?
-
-
-# Gibbs Free Energy
-
-## Entropy change 
-Experienced data scientist with a passion for machine learning and mathematical derivations. Skilled in Python, R, and statistical modeling. Seeking opportunities to apply analytic abilities in innovative projects.
-
-## Activity and Chemical Potential
-The chemical potential of a given solute, say the ith, is stated in terms of its "activity," which we may think of as the amount of energy necessary to achieve the respective concentration relative to a standard concentration, all else constant (pressure, temperature, concentrations of other solutes ($ i \neq j $)
+$$
+\psi_{\text{Nernst}} = \frac{R\cdot T}{z\cdot F}\cdot \ln\left( \frac{[C^{\text{outside}}]}{[C^{\text{inside}}]} \right)
+$$ 
 
 ## Enthalpy
 Claim: The change in enthalpy, $ \Delta H $ is the heat absorbed (or released) by a system that undergoes a state change under conditions of constant pressure.  To see this, note that enthalpy is defined as:
