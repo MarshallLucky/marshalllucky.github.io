@@ -73,7 +73,7 @@ but it is the potential difference that is relevant:
 $$
 \begin{align*}
 \Delta\mu_{\text{electric}} &= z\cdot F\cdot \psi_{\text{outside}} -  z\cdot F\cdot \psi_{\text{inside}}\\
-                            &= z\cdot F\cdot \left(\psi_{\text{outside}-\psi_{\text{inside}} \right)\\
+                            &= z\cdot F\cdot \left(\psi_{\text{outside}}-\psi_{\text{inside}} \right)\\
 \end{align*}
 $$ 
 
