@@ -24,7 +24,7 @@ so that the enthalpy change due to the state change is:
 
 $ \Delta H = \Delta E + P \cdot \Delta V $
 
-but what is $ \Delta E $?  It is teh change in the internal energy of the system which is in turn equal to the heat absorbed less the work done by the system:
+but what is $ \Delta E $ ?  It is the change in the internal energy of the system which is in turn equal to the heat absorbed less the work done by the system:
 
 $ \Delta E = q + w = q - P \cdot \Delta V $ \
 
