@@ -16,11 +16,32 @@ permalink: /writeups/nernst_derivation_with_gibbs_discussion/
 Unauthorized copying or distribution of this document, in whole or in part, is prohibited without prior written permission.
 
 ## Context
-The situation is that we have a biological membrane on either side of which we have distinct ion concentrations of various species.  The concentration of each respective ion species differs from one side of the membrane to the other (and from the other species in general, but that is not what we are talking about).  Strictly, the membrane or "wall" or "barrier" does not have to be biological but it is one context in which the Nernst Potential (NP henceforth) is encountered.  
+The situation is that we have a biological membrane across which:
+* there is a nonzero electrical potential (voltage)
+  -which is often maintained for basically independent reasons, say by the ETC within the inner chamber of mitochondria.
+* there are ionic (charged) solutes on each side of the membrane:
+  -some of these solutes are permeable with respect the membrane;
+  -at least one solute is not permeable strictly and is also of different concentrations on each side:
+    -this is what maintains the potential difference.
 
-The ion species in question is by definition charged.  If it was not charged and if the membrane was permeable to that species
+Without a non-permeable solute with differing concentrations, there would be no voltage. In this case, given all permeable solutes, they would just tend toward equal concentrations on each sides.  It is the imposition of an external voltage, which would be typically established via a non-permeable solute of unequal concentrations (but one might envision somehow a voltage accomplished by some other means), that makes this interesting.  
 
-From a thermodynamic perspective, in the absence of opposiung forces,we would expect ions to move across the  membrane (when channels exist that facilitate this)
+In this situation, we have two opposing tendencies:
+* the tendency of unequal concentrations, in this case on the two sides of the membrane, to equalize;
+* the tendency of permeable charged solutes to offset the voltage difference.
+
+Equilibrium in this situation is defined as the concentrations at which these tendencies cancel each other out.  The equilibrium is "electrochemical" in the sense that the chemical potential, which tends to equalize concentrations of each ionic species on each side of the membrane, so that in the absence of other considerations, we would have (but we don't have this, but if we did...):
+$$
+[C_{i}^{\text{outside}}] = [C_{i}^{\text{inside}}]
+$$
+so that the $ i^\text{th} $ concentration would be the same on both sides.  
+
+
+ concentrations of various species.  The concentration of each respective ion species differs from one side of the membrane to the other (and from the other species in general, but that is not what we are talking about).  Strictly, the membrane or "wall" or "barrier" does not have to be biological but it is one context in which the NP is encountered.  
+
+The ion species in question is by definition charged.  If it was not charged and if the membrane was permeable to that species then diffusion would equalize the concentrations on either side.  However, these are ions and the are charged
+
+From a thermodynamic perspective, in the absence of opposing forces,we would expect ions to move across the  membrane (when channels exist that facilitate this)
 
 The **Nernst Potential** corresponds to 
 
