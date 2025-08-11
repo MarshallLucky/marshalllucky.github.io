@@ -18,11 +18,11 @@ Unauthorized copying or distribution of this document, in whole or in part, is p
 ## Context
 The situation is that we have a biological membrane across which:
 * there is a nonzero electrical potential (voltage)
-  -which is often maintained for basically independent reasons, say by the ETC within the inner chamber of mitochondria.
+  - which is often maintained for basically independent reasons, say by the ETC within the inner chamber of mitochondria.
 * there are ionic (charged) solutes on each side of the membrane:
-  -some of these solutes are permeable with respect the membrane;
-  -at least one solute is not permeable strictly and is also of different concentrations on each side:
-    -this is what maintains the potential difference.
+  - some of these solutes are permeable with respect the membrane;
+  - at least one solute is not permeable strictly and is also of different concentrations on each side:
+    - this is what maintains the potential difference.
 
 Without a non-permeable solute with differing concentrations, there would be no voltage. In this case, given all permeable solutes, they would just tend toward equal concentrations on each sides.  It is the imposition of an external voltage, which would be typically established via a non-permeable solute of unequal concentrations (but one might envision somehow a voltage accomplished by some other means), that makes this interesting.  
 
@@ -31,9 +31,11 @@ In this situation, we have two opposing tendencies:
 * the tendency of permeable charged solutes to offset the voltage difference.
 
 Equilibrium in this situation is defined as the concentrations at which these tendencies cancel each other out.  The equilibrium is "electrochemical" in the sense that the chemical potential, which tends to equalize concentrations of each ionic species on each side of the membrane, so that in the absence of other considerations, we would have (but we don't have this, but if we did...):
+
 $$
 [C_{i}^{\text{outside}}] = [C_{i}^{\text{inside}}]
 $$
+
 so that the $ i^\text{th} $ concentration would be the same on both sides.  
 
 
