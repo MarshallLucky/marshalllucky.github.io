@@ -87,7 +87,7 @@ $$
 so that
 
 $$
-z\cdot F\cdot \left(\psi_{\text{outside}-\psi_{\text{inside}} \right) = R\cdot T \cdot \ln\left( \frac{[C^{\text{outside}}]}{[C^{\text{inside}}]} \right)
+z\cdot F\cdot \left(\psi_{\text{outside}}-\psi_{\text{inside}} \right) = R\cdot T \cdot \ln\left( \frac{[C^{\text{outside}}]}{[C^{\text{inside}}]} \right)
 $$ 
 
 and finally identifying the electric potential difference as the Nernst Potential:
