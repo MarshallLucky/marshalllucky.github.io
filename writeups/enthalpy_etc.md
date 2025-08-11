@@ -26,7 +26,7 @@ $ \Delta H = \Delta E + P \cdot \Delta V $
 
 but what is $ \Delta E $ ?  It is the change in the internal energy of the system which is in turn equal to the heat absorbed less the work done by the system:
 
-$ \Delta E = q + w = q - P \cdot \Delta V $ \
+$ \Delta E = q + w = q - P \cdot \Delta V $
 
 where again we are assuming $ \Delta P = 0 $ since the state change is assumed to take place under conditions of constant pressure.  Let us now use this last relation to rexpress the enthalpy change as:
 

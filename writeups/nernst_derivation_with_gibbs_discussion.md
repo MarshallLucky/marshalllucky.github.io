@@ -9,7 +9,15 @@ permalink: /writeups/nernst_derivation_with_gibbs_discussion/
 **Author:** Todd R. Story  
 **Date Created:** 2025-08-10  
 **Last Modified:** 2025-08-10  
-**Description:** Nernst Potential derivation and analysis.    
+**Description:** Nernst Potential derivation and analysis. 
+**TODO:** 
+- Check sign of d_mu_electric = d_mu_chemical   
+- Number equations
+- Explain origin of chem potential equation
+  - Origin of the natural log term
+  - Relative to some standard state (but that will subtract out and or divide out (inside the ln() term))
+- Ditto for electric potential
+- Discussion of equilibrium nature of this relationship
 **Keywords:** physics, biology, [other relevant tags]  
 
 © 2025 Todd R. Story — All rights reserved.  
@@ -34,6 +42,7 @@ Equilibrium in this situation is defined as the concentrations at which these te
 
 $$
 [C_{i}^{\text{outside}}] = [C_{i}^{\text{inside}}]
+\label{eq:trivial_equilibrium}
 $$
 
 so that the $ i^\text{th} $ concentration would be the same on both sides.  But in fact there is an imposed voltage and all permeable ionic solutes must come into equilibrium with it.
@@ -46,7 +55,8 @@ Equilibrium occurs when the chemical potential difference between the two sides 
 
 The absolute chemical potential of a solute is given by:
 
-$$ \mu = \mu_{\text{0}} + R\cdot T \cdot \ln\left( [C] \right) $$
+$$ \mu = \mu_{\text{0}} + R\cdot T \cdot \ln\left( [C] \right) 
+\label{eq:absolute_chemical_potential}$$
 
 But it is the difference in this absolute potential that determines the relevant chemical potential:
 
@@ -58,6 +68,7 @@ so that
 
 $$ 
 \Delta\mu = R\cdot T \cdot \ln\left( \frac{[C^{\text{outside}}]}{[C^{\text{inside}}]} \right)
+\label{eq:absolute_relative_potential}
 $$
 
 #### Electrical Potential
@@ -66,6 +77,7 @@ Similarly, the electric potential of an ionic species is:
 
 $$
 \mu_{\text{electric}} = z\cdot F\cdot \psi
+\label{eq:absolute_electrical_potential}
 $$
 
 but it is the potential difference that is relevant:
@@ -75,6 +87,7 @@ $$
 \Delta\mu_{\text{electric}} &= z\cdot F\cdot \psi_{\text{outside}} -  z\cdot F\cdot \psi_{\text{inside}}\\
                             &= z\cdot F\cdot \left(\psi_{\text{outside}}-\psi_{\text{inside}} \right)\\
 \end{align*}
+\label{eq:relative_electrical_potential}
 $$ 
 
 #### Equilibrium
@@ -82,6 +95,7 @@ Equilibrium corresponds to equal chemical and electrical potentials:
 
 $$
 \Delta\mu_{\text{electrical}} = \Delta\mu_{\text{chemical}}
+\label{eq:nernst_potential}
 $$
 
 so that
