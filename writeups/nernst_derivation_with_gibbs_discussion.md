@@ -94,7 +94,7 @@ $$
 Equilibrium corresponds to equal chemical and electrical potentials:
 
 $$
-\Delta\mu_{\text{electrical}} = \Delta\mu_{\text{chemical}}
+\Delta\mu_{\text{electrical}} = -\Delta\mu_{\text{chemical}}
 \label{eq:nernst_potential}
 $$
 
@@ -109,3 +109,13 @@ and finally identifying the electric potential difference as the Nernst Potentia
 $$
 \psi_{\text{Nernst}} = \frac{R\cdot T}{z\cdot F}\cdot \ln\left( \frac{[C^{\text{outside}}]}{[C^{\text{inside}}]} \right)
 $$ 
+
+## Outstanding Questions
+1. Why Gibbs free energy, i.e., why does this determine equilibrium and why does it determine whether a given reaction is spontaneous?  Is not this determined by the all-inclusive entropy change?
+
+2. Where does the log term come from in \eqref{eq:absolute_chemical_potential}?
+
+### Gibbs Free Energy
+
+
+### Absolute Chemical Potential Log Term
