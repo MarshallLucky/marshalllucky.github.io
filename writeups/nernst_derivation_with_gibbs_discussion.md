@@ -1,8 +1,31 @@
 ---
-title: Basic Thermodynamics
+title: Nernst Potential Derivation
 layout: default
 permalink: /writeups/nernst_derivation_with_gibbs_discussion/
 ---
+
+# Nernst Potential (NP)
+
+**Author:** Todd R. Story  
+**Date Created:** 2025-08-10  
+**Last Modified:** 2025-08-10  
+**Description:** Nernst Potential derivation and analysis.    
+**Keywords:** physics, biology, [other relevant tags]  
+
+© 2025 Todd R. Story — All rights reserved.  
+Unauthorized copying or distribution of this document, in whole or in part, is prohibited without prior written permission.
+
+## Context
+The situation is that we have a biological membrane on either side of which we have distinct ion concentrations of various species.  The concentration of each respective ion species differs from one side of the membrane to the other (and from the other species in general, but that is not what we are talking about).  Strictly, the membrane or "wall" or "barrier" does not have to be biological but it is one context in which the Nernst Potential (NP henceforth) is encountered.  
+
+The ion species in question is by definition charged.  If it was not charged and if the membrane was permeable to that species
+
+From a thermodynamic perspective, in the absence of opposiung forces,we would expect ions to move across the  membrane (when channels exist that facilitate this)
+
+The **Nernst Potential** corresponds to 
+
+there is a chemical potential inside and another outside and there is their difference.  similarly for the electrical potential, there is a difference.  these potential difference, chemical and electrical, are opposing.  when the chemical potential difference between the two sides equals the electrical potential difference between the two sides, this is the definition of equilibrium and the electrical potential in that state is the so-called Nernst potential, no?
+
 
 # Gibbs Free Energy
 
