@@ -40,7 +40,7 @@ so that the $ i^\text{th} $ concentration would be the same on both sides.  But 
 
 ### Equilibrium
 
-Equilibrium occurs when the chemical potential difference between the to sides is equal to the electrical potential difference between the two sides.
+Equilibrium occurs when the chemical potential difference between the two sides is equal to the electrical potential difference between the two sides.
 
 #### Chemical Potential
 
