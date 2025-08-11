@@ -2,10 +2,11 @@
   window.MathJax = {
     tex: {
       inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$','$$'], ['\\[','\\]']]
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      tags: 'all'
+      //'all' numbers all equations (ie all display blocks, but still need add \label's to reference in text, but if no label will still have a number)
     },
-    options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
-    tags: 'all'
+    options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
   };
 </script>
 <script id="MathJax-script" async
