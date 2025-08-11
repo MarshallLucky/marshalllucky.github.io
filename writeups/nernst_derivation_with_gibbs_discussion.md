@@ -36,8 +36,26 @@ $$
 [C_{i}^{\text{outside}}] = [C_{i}^{\text{inside}}]
 $$
 
-so that the $ i^\text{th} $ concentration would be the same on both sides.  
+so that the $ i^\text{th} $ concentration would be the same on both sides.  But in fact there is an imposed voltage and all permeable ionic solutes must come into equilibrium with it.
 
+### Equilibrium
+
+Equilibrium occurs when the chemical potential difference between the to sides is equal to the electrical potential difference between the two sides.
+
+#### Chemical Potential
+
+The absolute chemical potential of a solute is given by:
+
+$$ \mu = \mu_{\text{0}} + R\cdot T \cdot \ln\left( [C] \right) $$
+
+But it is the difference in this absolute potential that determines the relevant chemical potential:
+
+$$ 
+\begin{align*}
+\Delta\mu &= \mu_{\text{0}} + R\cdot T \cdot \ln\left( [C^{\text{outside}}] \right) - R\cdot T \cdot \ln\left( [C^{\text{inside}}] \right)
+          & = R\cdot T \cdot \ln\left( \frac{[C^{\text{outside}}]}{[C^{\text{inside}}]} \right)
+\end{align*}
+$$
 
  concentrations of various species.  The concentration of each respective ion species differs from one side of the membrane to the other (and from the other species in general, but that is not what we are talking about).  Strictly, the membrane or "wall" or "barrier" does not have to be biological but it is one context in which the NP is encountered.  
 
