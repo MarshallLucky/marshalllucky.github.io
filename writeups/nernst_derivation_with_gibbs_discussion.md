@@ -51,11 +51,15 @@ $$ \mu = \mu_{\text{0}} + R\cdot T \cdot \ln\left( [C] \right) $$
 But it is the difference in this absolute potential that determines the relevant chemical potential:
 
 $$ 
-\begin{align*}
-\Delta\mu &= \mu_{\text{0}} + R\cdot T \cdot \ln\left( [C^{\text{outside}}] \right) - R\cdot T \cdot \ln\left( [C^{\text{inside}}] \right)
-          & = R\cdot T \cdot \ln\left( \frac{[C^{\text{outside}}]}{[C^{\text{inside}}]} \right)
-\end{align*}
+\Delta\mu = \mu_{\text{0}} + R\cdot T \cdot \ln\left( [C^{\text{outside}}] \right) - \mu_{\text{0}} - R\cdot T \cdot \ln\left( [C^{\text{inside}}] \right)
 $$
+
+so that
+
+$$ 
+\Delta\mu = R\cdot T \cdot \ln\left( \frac{[C^{\text{outside}}]}{[C^{\text{inside}}]} \right)
+$$
+
 
  concentrations of various species.  The concentration of each respective ion species differs from one side of the membrane to the other (and from the other species in general, but that is not what we are talking about).  Strictly, the membrane or "wall" or "barrier" does not have to be biological but it is one context in which the NP is encountered.  
 
