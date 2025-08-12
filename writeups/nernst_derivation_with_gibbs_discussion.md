@@ -112,60 +112,10 @@ $$
 
 ## Outstanding Questions
 1. Why Gibbs free energy, i.e., why does this determine equilibrium and why does it determine whether a given reaction is spontaneous?  Is not this determined by the all-inclusive entropy change?
+-[ANSWER: See section "Gibbs Free Energy"](thermodynamics.md)
 
 2. Where does the log term come from in \eqref{eq:absolute_chemical_potential}?
 
-### Gibbs Free Energy (GFE)
-The claim is that reactions (or more generally, 'actions' period) are spontaneous *under conditions of constant temperature and constant pressure* if and only if the GFE change is negative.  Put another way, if there is positive GFE, reactions will go forward. Perhaps we can think of  GFE as a generalized fuel (that can take negative values) for a vehicle that will always 'go' if it has said fuel.
 
-#### Proof Using Second Law
-The second law states that reactions can and will occur if and only if the *total* entropy of the universe increases as a consequence of that action:
-
-$$
-\Delta S_{\text{total}} \equiv \Delta S_{\text{system}} + \Delta S_{\text{surroundings}} \geq 0
-\label{eq:second_law}
-$$
-
-**Outline of Proof** Under conditions of constant temperature and pressure, we will show a negative Gibbs free energy change is equivalent to and follows logically from \eqref{eq:second_law}:
-
-$$
-   \Delta S_{\text{total}} \geq \Leftrightarrow \Delta G \leq 0
-   \label{eq:equivalence_second_law_to_negative_gfe_change}
-$$ 
-
-Proceeding, first recognize the heat absorbed by the surroundings (by which we mean strictly the rest of the universe outside the system of interest) equals that produced by the system:
-
-$$
-   Delta S_{\text{surroundings}} = -\frac{\Delta Q_{system}}{T}
-   \label{eq:heat_absorbed_by_surroundings}
-$$
-
-with the negative sign reflecting that heat absorbed by the surroundings is the negative of that emitted by the system (*i.e.*, the subscript "system" is not a typo). We may thus write:
-
-$$
-\Delta S_{\text{system}} + \Delta S_{\text{surroundings}} =
-\Delta S_{\text{system}} - \frac{\Delta Q_{system}}{T}
-$$
-
-Recognizing that system enthalpy equals the heat absorbed by it (the system), $\Delta H_{system} = \Delta Q_{system}$ and also multiplying through by $-T$ we obtain:
-
-$$
-\Delta H_{system} - T \cdot \Delta S_{system} \leq 0
-\label{eq:gibbs_change_equivalent}
-$$
-
-where we were careful to reverse the previously $\geq$ sign.  Recall the Gibbs free energy can be written as (or possibly taken as *defined* as):
-
-$$
-G = H - T \cdot S
-$$
-
-Since $T$ is assumed constant, the differential form is $\Delta G=\Delta H-T\cdot \Delta S$ so that we may reexpress \eqref{eq:gibbs_change_equivalent} as 
-
-$$
-\Delta G_{system} \leq 0
-$$
-
-which proves \eqref{eq:equivalence_second_law_to_negative_gfe_change}.
 
 ### Absolute Chemical Potential Log Term
