@@ -1,7 +1,7 @@
 ---
 title: Nernst Potential Derivation
 layout: default
-permalink: /writeups/nernst_derivation_with_gibbs_discussion/
+permalink: /writeups/nernst_potential/
 ---
 
 # Nernst Potential (NP)

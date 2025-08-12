@@ -1,7 +1,7 @@
 ---
 title: Enthalpy Etc
 layout: default
-permalink: /writeups/enthalpy_etc/
+permalink: /writeups/thermodynamics/
 ---
 
 # Thermodynamics
