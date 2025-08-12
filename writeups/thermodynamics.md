@@ -103,7 +103,7 @@ which proves \eqref{eq:equivalence_second_law_to_negative_gfe_change}.
 ### Helmholtz Free Energy
 Under conditions of constant pressure and temperature, the condition for spontaneity is a negative Gibbs free energy change.  If volume is constant instead of pressure, the condition is that the *Helmholtz* free energy is negative.  The derivation is highly similar but there are some important conceptual physical differences.  
 
-In the Gibbs case, we identified the heat absorbed by the system as the enthalpy (indeed this can be considered the definition of enthalpy). As noted in Equation \eqref{eq:enthalpy_differential} above, enthalpy just subtracts off the work component of the total internal energy change, to carve out the heat contribution.  This is what the surrounding environment absorbs and is what determines its entropy change, see \eqref{eq:second_law}.  In the Helmholtz case, $V$ is constant and there is no work, *i.e.*, the internal energy change $\Delta E$ is already pure heat and there is nothing to subtract.  Hence in the Helmholtz case we work directly with $E$ and $\Delta E$instead of enthalpy.
+In the Gibbs case, we identified the heat absorbed by the system as the enthalpy (indeed this can be considered the definition of enthalpy). As noted in Equation \eqref{eq:enthalpy_differential} above, enthalpy just adds back the work component of the total internal energy change, leaving only the heat contribution.  This is what the surrounding environment absorbs and is what determines its entropy change, see \eqref{eq:second_law}.  In the Helmholtz case, $V$ is constant and there is no work, *i.e.*, the internal energy change $\Delta E$ is already pure heat and there is nothing to subtract.  Hence in the Helmholtz case we work directly with $E$ and $\Delta E$ instead of enthalpy.
 
 
 **Outline of Helmholtz Proof** 
@@ -115,20 +115,20 @@ $$
 $$ 
 
 **Proceeding**
-Again, as in the Gibbs case, the heat absorbed by the surroundings equals that produced by the system, see \equref{eq:heat_absorbed_by_surroundings}.  Thus we have again Equation \eqref{eq:entropy_condition_in_terms_system_heat}.  Now however, in the constant volume (and N and T) case, we recognize the heat absorbed by the system as the internal energy change directly (instead of using enthalpy), $\Delta E_{system} = \Delta Q_{system}$ ,and we write the next equations in such terms:
+Again, as in the Gibbs case, the heat absorbed by the surroundings equals that produced by the system, see \eqref{eq:heat_absorbed_by_surroundings}.  Thus we have again Equation \eqref{eq:entropy_condition_in_terms_system_heat}.  In this case however, instead of using enthalpy, in the constant volume casee we recognize the heat absorbed by the system as the internal energy change directly, $\Delta E_{system} = \Delta Q_{system}$, and thus write the next equations in such terms:
 
 $$
 \Delta E_{system} - T \cdot \Delta S_{system} \leq 0
 \label{eq:helmholtz_change_equivalent}
 $$
 
-which is analogous to \label{eq:gibbs_change_equivalent}.  However, we now identify the Helmholtz free energy 
+which is analogous to \label{eq:gibbs_change_equivalent} except we now identify the Helmholtz free energy:
 
 $$
 F = E - T \cdot S
 $$
 
-the differential form of which is $\Delta F=\Delta E-T\cdot \Delta S$ so that we may reexpress \eqref{eq:helmholtz_change_equivalent} as 
+the differential form of which is now $\Delta F=\Delta E-T\cdot \Delta S$ so that we may reexpress \eqref{eq:helmholtz_change_equivalent} as 
 
 $$
 \Delta F_{system} \leq 0
