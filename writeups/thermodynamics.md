@@ -55,7 +55,8 @@ $$
 \label{eq:second_law}
 $$
 
-**Outline of Proof** 
+**Outline of Proof**
+
 Under conditions of constant temperature and pressure, we will show a negative Gibbs free energy change is equivalent to and follows logically from \eqref{eq:second_law}:
 
 $$
@@ -64,6 +65,7 @@ $$
 $$ 
 
 **Proceeding**
+
 First recognize the heat absorbed by the surroundings (by which we mean strictly the rest of the universe outside the system of interest) equals that produced by the system:
 
 $$
@@ -107,6 +109,7 @@ In the Gibbs case, we identified the heat absorbed by the system as the enthalpy
 
 
 **Outline of Helmholtz Proof** 
+
 Under conditions of constant temperature and *volume*, we will show a negative *Helmholtz* free energy change is equivalent to and follows logically from \eqref{eq:second_law}:
 
 $$
@@ -115,14 +118,15 @@ $$
 $$ 
 
 **Proceeding**
-Again, as in the Gibbs case, the heat absorbed by the surroundings equals that produced by the system, see \eqref{eq:heat_absorbed_by_surroundings}.  Thus we have again Equation \eqref{eq:entropy_condition_in_terms_system_heat}.  In this case however, instead of using enthalpy, in the constant volume casee we recognize the heat absorbed by the system as the internal energy change directly, $\Delta E_{system} = \Delta Q_{system}$, and thus write the next equations in such terms:
+
+Again, as in the Gibbs case, the heat absorbed by the surroundings equals that produced by the system, see \eqref{eq:heat_absorbed_by_surroundings}.  Thus we have again Equation \eqref{eq:entropy_condition_in_terms_system_heat}.  In this case, however, instead of using enthalpy, in the constant volume case we recognize the heat absorbed by the system as the internal energy change directly, $\Delta E_{system} = \Delta Q_{system}$, and thus write the next equations in such terms:
 
 $$
 \Delta E_{system} - T \cdot \Delta S_{system} \leq 0
 \label{eq:helmholtz_change_equivalent}
 $$
 
-which is analogous to \label{eq:gibbs_change_equivalent} except we now identify the Helmholtz free energy:
+which is analogous to \eqref{eq:gibbs_change_equivalent} except we now identify the Helmholtz free energy:
 
 $$
 F = E - T \cdot S
