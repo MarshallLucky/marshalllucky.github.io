@@ -1,7 +1,7 @@
 ---
 title: Ideal Gas Partition Function (NVT)
 layout: default
-permalink: /writeups/ideal_gas_partition_function_nvt/
+permalink: /writeups/partition_function_ideal_gas_nvt/
 ---
 
 **Author:** Todd R. Story  
@@ -111,8 +111,6 @@ $$
 1) The classical expression assumes $n\Lambda^{3} \ll 1$ (non-degenerate gas).  
 2) Quantum statistics (Bose/Fermi) replace the $1/N!$ Gibbs factor with (anti)symmetrization when degeneracy matters.
 
----
-
 # NPT Ensemble (Isothermal–Isobaric) for the Ideal Gas
 
 Here we construct the NPT partition function $\Delta(N,P,T)$ two ways and connect it to the Gibbs free energy $G$ and the chemical potential $\mu$.
@@ -200,5 +198,3 @@ $$
 $$
 
 which is the familiar standard-state expression used for ideal gases/ideal solutes.
-
----
