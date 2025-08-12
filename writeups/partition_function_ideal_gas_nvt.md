@@ -4,7 +4,7 @@ layout: default
 permalink: /writeups/ideal_gas_partition_function_nvt/
 ---
 
-**Author:** Todd R. Story   
+**Author:** Todd R. Story  
 **Date Created:** 2025-08-12  
 **Last Modified:** 2025-08-12  
 **Description:** Derivation of the canonical (N,V,T) partition function for a classical monatomic ideal gas.  
