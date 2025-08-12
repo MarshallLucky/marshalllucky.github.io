@@ -7,8 +7,8 @@ permalink: /writeups/ideal_gas_partition_function_nvt/
 **Author:** Todd R. Story  
 **Date Created:** 2025-08-12  
 **Last Modified:** 2025-08-12  
-**Description:** Derivation of the canonical (N,V,T) partition function for a classical monatomic ideal gas.  
-**Keywords:** statistical mechanics, partition function, ideal gas, canonical ensemble, thermal wavelength
+**Description:** Derivation of the canonical (N,V,T) partition function for a classical monatomic ideal gas, followed by the NPT (isothermal–isobaric) ensemble and its connection to Gibbs free energy and chemical potential.  
+**Keywords:** statistical mechanics, partition function, ideal gas, canonical ensemble, NPT, thermal wavelength
 
 © 2025 Todd R. Story — All rights reserved.  
 Unauthorized copying or distribution of this document, in whole or in part, is prohibited without prior written permission.
@@ -25,7 +25,7 @@ We derive the canonical partition function $Z(N,V,T)$ for a monatomic classical 
 $$
 Z(N,V,T) = \frac{1}{h^{3N}N!} \int d^{3N}q\, d^{3N}p\; \exp\!\big[-\beta H(p,q)\big],
 \qquad \beta \equiv \frac{1}{k_B T}
-\label{eq:canonical_partition_function}
+\label{igpf:eq:canonical_partition_function}
 $$
 
 Here $h$ makes the phase–space integral dimensionless, and $1/N!$ enforces indistinguishability.
@@ -34,10 +34,10 @@ For an **ideal gas**, the Hamiltonian has no potential term:
 
 $$
 H(p,q) = \sum_{i=1}^{N} \frac{\mathbf p_i^2}{2m}
-\label{eq:ideal_gas_hamiltonian}
+\label{igpf:eq:ideal_gas_hamiltonian}
 $$
 
-so the integrand in \eqref{eq:canonical_partition_function} is independent of the positions $q$.
+so the integrand in \eqref{igpf:eq:canonical_partition_function} is independent of the positions $q$.
 
 ## Position Integral
 
@@ -45,7 +45,7 @@ The configuration integral factorizes:
 
 $$
 \int d^{3N}q = \left(\int_V d^3q\right)^{\!N} = V^{N}
-\label{eq:position_integral}
+\label{igpf:eq:position_integral}
 $$
 
 ## Momentum Integral
@@ -56,14 +56,14 @@ $$
 \int d^{3N}p\, e^{-\beta \sum_i \mathbf p_i^2/2m}
 = \prod_{i=1}^{N}\left(\int d^{3}p_i\, e^{-\beta \mathbf p_i^2/2m}\right)
 = \left[\int d^{3}p\, e^{-\beta p^2/2m}\right]^{\!N}
-\label{eq:momentum_integral_factorization}
+\label{igpf:eq:momentum_integral_factorization}
 $$
 
 In spherical momentum coordinates:
 
 $$
 d^3p = p^2 \sin\theta \; dp \; d\theta \; d\phi
-\label{eq:momentum_volume_element}
+\label{igpf:eq:momentum_volume_element}
 $$
 
 so:
@@ -72,23 +72,23 @@ $$
 \int d^{3}p\, e^{-\beta p^2/2m}
 = 4\pi \int_{0}^{\infty} p^{2} e^{-\beta p^{2}/2m}\, dp
 = (2\pi m k_B T)^{3/2}
-\label{eq:momentum_integral_result}
+\label{igpf:eq:momentum_integral_result}
 $$
 
 ## Assemble $Z$ and Define the Thermal Wavelength
 
-Combining \eqref{eq:position_integral} and \eqref{eq:momentum_integral_result} into \eqref{eq:canonical_partition_function}:
+Combining \eqref{igpf:eq:position_integral} and \eqref{igpf:eq:momentum_integral_result} into \eqref{igpf:eq:canonical_partition_function}:
 
 $$
 Z(N,V,T) = \frac{1}{h^{3N}N!}\, V^{N}\, \big(2\pi m k_B T\big)^{3N/2}
-\label{eq:ideal_gas_partition_pre_lambda}
+\label{igpf:eq:ideal_gas_partition_pre_lambda}
 $$
 
 Introduce the (de Broglie) **thermal wavelength**:
 
 $$
 \Lambda \;\equiv\; \frac{h}{\sqrt{2\pi m k_B T}}
-\label{eq:thermal_wavelength}
+\label{igpf:eq:thermal_wavelength}
 $$
 
 to obtain the standard compact form:
@@ -97,7 +97,7 @@ $$
 \boxed{
 Z(N,V,T) = \frac{1}{N!}\left(\frac{V}{\Lambda^{3}}\right)^{N}
 }
-\label{eq:ideal_gas_partition_final}
+\label{igpf:eq:ideal_gas_partition_final}
 $$
 
 ## Consistency Checks
@@ -110,3 +110,95 @@ $$
 *Notes:*  
 1) The classical expression assumes $n\Lambda^{3} \ll 1$ (non-degenerate gas).  
 2) Quantum statistics (Bose/Fermi) replace the $1/N!$ Gibbs factor with (anti)symmetrization when degeneracy matters.
+
+---
+
+# NPT Ensemble (Isothermal–Isobaric) for the Ideal Gas
+
+Here we construct the NPT partition function $\Delta(N,P,T)$ two ways and connect it to the Gibbs free energy $G$ and the chemical potential $\mu$.
+
+## Route A: Laplace Transform of $Z(N,V,T)$
+
+Allow $V$ to fluctuate while $P$ and $T$ are fixed:
+
+$$
+\Delta(N,P,T) \;=\; \int_{0}^{\infty} dV \; e^{-\beta P V} \; Z(N,V,T)
+\label{nptpf:eq:laplace_def}
+$$
+
+Using \eqref{igpf:eq:ideal_gas_partition_final}:
+
+$$
+\Delta(N,P,T) \;=\; \frac{1}{N!\,\Lambda^{3N}}
+\int_{0}^{\infty} dV \; V^{N} e^{-\beta P V}
+\label{nptpf:eq:laplace_with_Z}
+$$
+
+The integral is $\Gamma(N+1)/(\beta P)^{N+1}=N!/(\beta P)^{N+1}$, yielding:
+
+$$
+\boxed{
+\Delta(N,P,T) \;=\; \frac{1}{\Lambda^{3N}}\;\frac{1}{(\beta P)^{\,N+1}}
+}
+\label{nptpf:eq:npt_partition_final}
+$$
+
+(For large $N$, the $+1$ in the exponent is negligible in thermodynamic derivatives, but it is exact for the integral.)
+
+## Route B: Direct NPT Definition (with $e^{-\beta P V}$ in the integrand)
+
+Start from the classical phase-space integral and integrate over $V$ as a variable with mechanical weighting:
+
+$$
+\Delta(N,P,T) \;=\; \frac{1}{h^{3N}N!}
+\int_{0}^{\infty} dV \int d^{3N}q \int d^{3N}p \;
+\exp\!\Big[-\beta\!\Big(\sum_{i=1}^N\frac{\mathbf p_i^2}{2m} + P V\Big)\Big]
+\label{nptpf:eq:direct_def}
+$$
+
+The $q$-integral gives $V^N$ (as in \eqref{igpf:eq:position_integral}), the $p$-integral gives $(2\pi m k_BT)^{3N/2}$ (as in \eqref{igpf:eq:momentum_integral_result}), and the remaining $V$-integral matches \eqref{nptpf:eq:laplace_with_Z}, reproducing \eqref{nptpf:eq:npt_partition_final}.
+
+## Gibbs Free Energy and the Saddle-Point Link to $F$
+
+Define:
+
+$$
+G(N,P,T) \;=\; -k_B T \ln \Delta(N,P,T)
+\label{nptpf:eq:G_from_Delta}
+$$
+
+From \eqref{nptpf:eq:laplace_def}, in the thermodynamic limit the integral is dominated by the volume $V^\ast$ that minimizes $F(N,V,T)+PV$:
+
+$$
+G(N,P,T) \;=\; \min_{V}\,\big[\,F(N,V,T)+P V\,\big]
+\quad\text{(saddle-point/Legendre connection)}
+\label{nptpf:eq:legendre_min}
+$$
+
+## Chemical Potential at Constant $(T,P)$
+
+By definition:
+
+$$
+\mu \;=\; \left(\frac{\partial G}{\partial N}\right)_{T,P}
+\label{nptpf:eq:mu_from_G}
+$$
+
+For the ideal gas, inserting \eqref{nptpf:eq:npt_partition_final} into \eqref{nptpf:eq:G_from_Delta} gives (after algebra):
+
+$$
+\mu(T,P) \;=\; k_B T \,\ln\!\Big(\frac{P\,\Lambda^{3}}{k_B T}\Big)
+\;=\; \mu^\circ(T,P) + k_B T \ln\!\Big(\frac{n\,\Lambda^{3}}{n^\circ \Lambda^{3}}\Big)
+\label{nptpf:eq:mu_ideal_npt}
+$$
+
+Equivalently, in molar form for dilute solutions:
+
+$$
+\mu \;=\; \mu^\circ(T,P) + RT \ln\!\left(\frac{C}{C^\circ}\right),
+\label{nptpf:eq:mu_standard_state}
+$$
+
+which is the familiar standard-state expression used for ideal gases/ideal solutes.
+
+---
