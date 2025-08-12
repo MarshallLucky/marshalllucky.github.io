@@ -221,14 +221,14 @@ $$
 
 which is the familiar standard-state expression used for ideal gases/ideal solutes.
 
-## Appendix: Thermal de Broglie Wavelength in the Canonical Partition Function (`APP-NVT-001`)
+## Appendix: Thermal de Broglie Wavelength in the Canonical Partition Function
 
 ### 1. Introduction
 The **thermal de Broglie wavelength**  
 
 $$
 \lambda_{\mathrm{th}} \equiv \frac{h}{\sqrt{2\pi m k_B T}}
-\tag{A1-APP-NVT-001}
+\tag{A1} \label{eq:thermal_lambda}
 $$  
 
 is the characteristic quantum wavelength of a particle in thermal equilibrium at temperature $T$. It emerges naturally when evaluating the translational part of the canonical partition function of a free particle (or ideal gas).  
@@ -240,7 +240,7 @@ For a classical monatomic ideal gas in the canonical ensemble (NVT):
 
 $$
 Z_N = \frac{1}{N! h^{3N}} \int \cdots \int e^{-\beta \sum_{i=1}^N \frac{\mathbf{p}_i^2}{2m}} \; d^{3N}p \; d^{3N}q
-\tag{A2-APP-NVT-001}
+\tag{A2} \label{eq:ZN_start}
 $$  
 
 Here:  
@@ -257,7 +257,7 @@ $$
 Z_N = \frac{1}{N! h^{3N}} 
 \left[ \int e^{-\beta \frac{\mathbf{p}^2}{2m}} d^3p \right]^N
 \left[ \int_V d^3q \right]^N
-\tag{A3-APP-NVT-001}
+\tag{A3} \label{eq:ZN_sep}
 $$  
 
 The position integral gives simply $V^N$.  
@@ -270,7 +270,7 @@ The 3D Gaussian integral:
 $$
 \int e^{-\beta \frac{\mathbf{p}^2}{2m}} d^3p
 = \left[ \int_{-\infty}^{\infty} e^{-\beta \frac{p_x^2}{2m}} dp_x \right]^3
-\tag{A4-APP-NVT-001}
+\tag{A4} \label{eq:gaussian_3d}
 $$  
 
 Each 1D Gaussian gives $\sqrt{2\pi m / \beta} = \sqrt{2\pi m k_B T}$.  
@@ -280,7 +280,7 @@ Thus:
 $$
 \int e^{-\beta \frac{\mathbf{p}^2}{2m}} d^3p
 = \left( 2\pi m k_B T \right)^{3/2}
-\tag{A5-APP-NVT-001}
+\tag{A5} \label{eq:gaussian_result}
 $$  
 
 ---
@@ -290,38 +290,47 @@ Substitute back into the single-particle partition function:
 
 $$
 Z_1 = \frac{V}{h^3} \left( 2\pi m k_B T \right)^{3/2}
-\tag{A6-APP-NVT-001}
+\tag{A6} \label{eq:Z1}
 $$  
 
-Define the **thermal de Broglie wavelength** $\lambda_{\mathrm{th}}$ from Eq. (A1-APP-NVT-001) so that:  
+Define the **thermal de Broglie wavelength** $\lambda_{\mathrm{th}}$ from Eq. \eqref{eq:thermal_lambda} so that:  
 
 $$
 \lambda_{\mathrm{th}}^3 = \frac{h^3}{(2\pi m k_B T)^{3/2}}
-\tag{A7-APP-NVT-001}
+\tag{A7} \label{eq:lambda_cubed}
 $$  
 
 Then:  
 
 $$
 Z_1 = \frac{V}{\lambda_{\mathrm{th}}^3}
-\tag{A8-APP-NVT-001}
+\tag{A8} \label{eq:Z1_lambda}
 $$  
 
 ---
 
-### 6. Physical meaning
-- **From de Broglie**: For a particle with momentum $p \sim \sqrt{2\pi m k_B T}$, its wavelength is $\lambda \sim h/p$ — exactly $\lambda_{\mathrm{th}}$.  
-- **In the partition function**: $\lambda_{\mathrm{th}}^3$ is the “quantum volume” occupied by one translational quantum state.  
-- **Classical limit**: If $\lambda_{\mathrm{th}}^3 \ll V/N$ (mean volume per particle), states are sparsely occupied → classical Maxwell–Boltzmann statistics apply.  
-- **Quantum regime**: If $\lambda_{\mathrm{th}}^3 \gtrsim V/N$, particle wavefunctions overlap and quantum statistics (Bose–Einstein or Fermi–Dirac) become necessary.  
+### 6. Physical meaning and relevance
+The thermal de Broglie wavelength sets the length scale at which quantum effects in a gas become important. It compares a particle’s **quantum wave nature** (via the de Broglie relation) to the **mean spacing** between particles in the gas:  
+
+- **Classical Maxwell–Boltzmann regime**:  
+  If $\lambda_{\mathrm{th}}^3 \ll V/N$, the wavefunctions of particles barely overlap. The gas can be treated as a collection of distinguishable particles with negligible quantum statistics effects.
+
+- **Quantum regime**:  
+  If $\lambda_{\mathrm{th}}^3 \gtrsim V/N$, particle wavefunctions significantly overlap. The gas must be described by either:  
+  - **Bose–Einstein statistics** (bosons): Possible condensation into the ground state at low $T$ (Bose–Einstein condensation).  
+  - **Fermi–Dirac statistics** (fermions): Pauli exclusion principle enforces one particle per quantum state, leading to degeneracy pressure (important in metals, neutron stars).
+
+Thus, $\lambda_{\mathrm{th}}$ provides a **simple criterion** for deciding whether a gas is in the classical or quantum regime.
 
 ---
 
 ### 7. Figure: Thermal wavelength vs mean particle spacing
 
 ![Thermal wavelength vs mean particle spacing](figs_thermodynamics/thermal_wavelength_vs_spacing.png)  
+
 $$
-\text{Figure A1-APP-NVT-001: Thermal wavelength vs mean particle spacing}
+\text{Figure A1: Thermal wavelength vs mean particle spacing}
+\label{fig:thermal_vs_spacing}
 $$  
 
 **Figure Notes:**  
