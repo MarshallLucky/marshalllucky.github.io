@@ -126,26 +126,48 @@ $$
 \label{eq:second_law}
 $$
 
-**Outline of Proof** Under conditions of constant temperature and pressure, we will show the Second Law \eqref{second_law} implies or is equivalent to the claim. *I.e.*, that if the total entropy change is positive then the GFE change is negative.
+**Outline of Proof** Under conditions of constant temperature and pressure, we will show the Second Law \eqref{eq:second_law} implies or is equivalent to the claim. *I.e.*, that if the total entropy change is positive then the GFE change is negative.
+
 $$
    Delta S_{\text{total}} \geq \Leftrightarrow \delta G \leq 0
    \label{eq:equivalence_second_law_to_negative_gfe_change}
 $$ 
 
-*Proceeding...*, first recognize the heat absorbed by the surroundings \footnote{By which we mean the rest of the universe but practically speaking we can probably limit this to Earth and possibly even the lab table.} equals that produced by the system:
+Proceeding, first recognize the heat absorbed by the surroundings \footnote{By which we mean the rest of the universe but practically speaking we can probably limit this to Earth and possibly even the lab table.} equals that produced by the system:
 \footnote{This follows from other aspects of basic thermodynamics, but even right now I do not understand why the universe entropy is solely related to the heat and not to physical work.  But its freshman physics that i just need to review later.} 
 \footnote{Actually some of the heat can remain in the system but nevermind all these complications.}
+
 $$
    Delta S_{\text{surroundings}} = -\frac{\Delta Q_{system}}{T}
    \label{eq:heat_absorbed_by_surroundings}
 $$
+
 with the negative sign reflecting that heat absorbed by the surroundings is the negative of that emitted by the system (*i.e.*, the subscript "system" is not a typo). We may thus write:
+
 $$
 \Delta S_{\text{system}} + \Delta S_{\text{surroundings}} =
 \Delta S_{\text{system}} - \frac{\Delta Q_{system}}{T}
-\label{eq:second_law}
 $$
 
+Recognizing that system enthalpy equals the heat absorbed by the system, $\Delta H_{system} = \Delta Q_{system}$ and also multiplying through by $-T$:
 
+$$
+\Delta H_{system} - T \cdot \Delta S_{system} \leq 0
+\label{eq:gibbs_change_equivalent}
+$$
+
+where we were careful to reverse the previously $\geq$ sign.  Recall the definition of GFE is:
+
+$$
+G = H - T \cdot S
+$$
+
+Since $T$ is assumed constant, the differential form is $\Delta G=\Delta H-T\cdot \Delta S$ so that we may reexpress \eqref{eq:gibbs_change_equivalent} as 
+
+$$
+\Delta G_{system} \leq 0
+$$
+
+which proves \eqref{eq:equivalence_second_law_to_negative_gfe_change}.
 
 ### Absolute Chemical Potential Log Term
