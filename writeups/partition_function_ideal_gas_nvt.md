@@ -28,6 +28,31 @@ Z(N,V,T) = \frac{1}{h^{3N}N!} \int d^{3N}q\, d^{3N}p\; \exp\!\big[-\beta H(p,q)\
 \label{igpf:eq:canonical_partition_function}
 $$
 
+Where:
+
+- **$Z$** is the canonical partition function.  
+- **$N$** is the number of particles.  
+- **$h$** is Planck’s constant.  
+- **$3N$** represents the 3 spatial dimensions for each of the $N$ particles.  
+- **$q$** represents the generalized position coordinates of the particles.  
+- **$p$** represents the generalized momentum coordinates of the particles.  
+- **$d^{3N}q$** is the differential volume element in configuration space, representing the integral over all possible positions.  
+- **$d^{3N}p$** is the differential volume element in momentum space, representing the integral over all possible momenta.  
+- **$H(q,p)$** is the Hamiltonian of the system, representing the total energy of the system as a function of its positions and momenta.  
+- **$e^{-\beta H(q,p)}$** is the Boltzmann factor, which gives the relative probability of a system being in a particular microstate with energy $H(q,p)$ at temperature $T$.  
+- **$\beta = 1/k_B T$** is the inverse temperature, where $k_B$ is the Boltzmann constant.  
+
+## Key aspects of the integral form
+
+- **Phase Space:** The integral is taken over the entire phase space of the system, which is a $6N$-dimensional space defined by the $3N$ position coordinates and $3N$ momentum coordinates of all the particles.  
+- **Indistinguishability:** The factor of $1/N!$ accounts for the indistinguishability of the particles, preventing overcounting of microstates when they are identical.  
+- **Normalization:** The factor of $1/h^{3N}$ arises from quantum mechanics and accounts for the quantization of phase space, ensuring the partition function is dimensionless.  
+- **Why $h$ appears:** The product $d^{3N}q\,d^{3N}p$ has units of $(\text{length}\times\text{momentum})^{3N} = (\text{action})^{3N}$. Dividing by $h^{3N}$ measures the phase–space volume in units of the smallest “quantum cell” allowed by the Heisenberg uncertainty principle ($\Delta x\,\Delta p \gtrsim h$). This makes $Z$ dimensionless and consistent with the quantum limit. The choice of $h$ rather than $\hbar$ is historical and works neatly with the Gaussian momentum integration in the classical limit.  
+- **Boltzmann Factor:** The exponential term, containing the Hamiltonian and the inverse temperature, ensures that states with lower energy have a higher probability of being occupied.  
+
+By evaluating this integral, one can determine the canonical partition function and subsequently calculate various thermodynamic properties of the system, including average energy, Helmholtz free energy, entropy, and pressure.
+
+
 Here $h$ makes the phase–space integral dimensionless, and $1/N!$ enforces indistinguishability.
 
 For an **ideal gas**, the Hamiltonian has no potential term:
