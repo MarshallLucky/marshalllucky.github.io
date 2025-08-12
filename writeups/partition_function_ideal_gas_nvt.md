@@ -52,9 +52,6 @@ Where:
 
 By evaluating this integral, one can determine the canonical partition function and subsequently calculate various thermodynamic properties of the system, including average energy, Helmholtz free energy, entropy, and pressure.
 
-
-Here $h$ makes the phase–space integral dimensionless, and $1/N!$ enforces indistinguishability.
-
 For an **ideal gas**, the Hamiltonian has no potential term:
 
 $$
@@ -223,3 +220,111 @@ $$
 $$
 
 which is the familiar standard-state expression used for ideal gases/ideal solutes.
+
+## Appendix: Thermal de Broglie Wavelength in the Canonical Partition Function (`APP-NVT-001`)
+
+### 1. Introduction
+The **thermal de Broglie wavelength**  
+
+$$
+\lambda_{\mathrm{th}} \equiv \frac{h}{\sqrt{2\pi m k_B T}}
+\tag{A1-APP-NVT-001}
+$$  
+
+is the characteristic quantum wavelength of a particle in thermal equilibrium at temperature $T$. It emerges naturally when evaluating the translational part of the canonical partition function of a free particle (or ideal gas).  
+
+---
+
+### 2. Starting point: Canonical partition function for $N$ non-interacting particles
+For a classical monatomic ideal gas in the canonical ensemble (NVT):  
+
+$$
+Z_N = \frac{1}{N! h^{3N}} \int \cdots \int e^{-\beta \sum_{i=1}^N \frac{\mathbf{p}_i^2}{2m}} \; d^{3N}p \; d^{3N}q
+\tag{A2-APP-NVT-001}
+$$  
+
+Here:  
+- $h$ makes the phase-space integral dimensionless (Planck’s constant as a quantum unit cell size).  
+- $d^{3N}p$ and $d^{3N}q$ are momentum and position volume elements.  
+- $\beta \equiv 1/(k_B T)$.  
+
+---
+
+### 3. Separate momentum and position integrals
+Because the Hamiltonian is separable into kinetic and potential energy for a free particle:  
+
+$$
+Z_N = \frac{1}{N! h^{3N}} 
+\left[ \int e^{-\beta \frac{\mathbf{p}^2}{2m}} d^3p \right]^N
+\left[ \int_V d^3q \right]^N
+\tag{A3-APP-NVT-001}
+$$  
+
+The position integral gives simply $V^N$.  
+
+---
+
+### 4. Evaluate the momentum integral for one particle
+The 3D Gaussian integral:  
+
+$$
+\int e^{-\beta \frac{\mathbf{p}^2}{2m}} d^3p
+= \left[ \int_{-\infty}^{\infty} e^{-\beta \frac{p_x^2}{2m}} dp_x \right]^3
+\tag{A4-APP-NVT-001}
+$$  
+
+Each 1D Gaussian gives $\sqrt{2\pi m / \beta} = \sqrt{2\pi m k_B T}$.  
+
+Thus:  
+
+$$
+\int e^{-\beta \frac{\mathbf{p}^2}{2m}} d^3p
+= \left( 2\pi m k_B T \right)^{3/2}
+\tag{A5-APP-NVT-001}
+$$  
+
+---
+
+### 5. Combine terms
+Substitute back into the single-particle partition function:  
+
+$$
+Z_1 = \frac{V}{h^3} \left( 2\pi m k_B T \right)^{3/2}
+\tag{A6-APP-NVT-001}
+$$  
+
+Define the **thermal de Broglie wavelength** $\lambda_{\mathrm{th}}$ from Eq. (A1-APP-NVT-001) so that:  
+
+$$
+\lambda_{\mathrm{th}}^3 = \frac{h^3}{(2\pi m k_B T)^{3/2}}
+\tag{A7-APP-NVT-001}
+$$  
+
+Then:  
+
+$$
+Z_1 = \frac{V}{\lambda_{\mathrm{th}}^3}
+\tag{A8-APP-NVT-001}
+$$  
+
+---
+
+### 6. Physical meaning
+- **From de Broglie**: For a particle with momentum $p \sim \sqrt{2\pi m k_B T}$, its wavelength is $\lambda \sim h/p$ — exactly $\lambda_{\mathrm{th}}$.  
+- **In the partition function**: $\lambda_{\mathrm{th}}^3$ is the “quantum volume” occupied by one translational quantum state.  
+- **Classical limit**: If $\lambda_{\mathrm{th}}^3 \ll V/N$ (mean volume per particle), states are sparsely occupied → classical Maxwell–Boltzmann statistics apply.  
+- **Quantum regime**: If $\lambda_{\mathrm{th}}^3 \gtrsim V/N$, particle wavefunctions overlap and quantum statistics (Bose–Einstein or Fermi–Dirac) become necessary.  
+
+---
+
+### 7. Figure: Thermal wavelength vs mean particle spacing
+
+![Thermal wavelength vs mean particle spacing](figs_thermodynamics/thermal_wavelength_vs_spacing.png)  
+$$
+\text{Figure A1-APP-NVT-001: Thermal wavelength vs mean particle spacing}
+$$  
+
+**Figure Notes:**  
+- The intersection point between the two curves marks the onset where quantum effects become significant.  
+- At high $T$, $\lambda_{\mathrm{th}}$ is much smaller than mean spacing → classical regime.  
+- At low $T$, $\lambda_{\mathrm{th}}$ approaches or exceeds spacing → quantum regime.
