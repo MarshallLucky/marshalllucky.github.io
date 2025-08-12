@@ -115,7 +115,37 @@ $$
 
 2. Where does the log term come from in \eqref{eq:absolute_chemical_potential}?
 
-### Gibbs Free Energy
+### Gibbs Free Energy (GFE)
+The claim is that reactions (or more generally, 'actions' period) are spontaneous *under conditions of constant temperature and constant pressure* if and only if the GFE change is negative.  Put another way, if there is positive GFE, reactions will go forward. Perhaps we can think of  GFE as a generalized fuel (that can take negative values) for a vehicle that will always 'go' if it has said fuel.
+
+#### Proof Using Second Law
+The second law states that reactions can and will occur if and only if the *total* entropy of the universe increases as a consequence of that action:
+
+$$
+\Delta S_{\text{total}} \equiv \Delta S_{\text{system}} + \Delta S_{\text{surroundings}} \geq 0
+\label{eq:second_law}
+$$
+
+**Outline of Proof** Under conditions of constant temperature and pressure, we will show the Second Law \eqref{second_law} implies or is equivalent to the claim. *I.e.*, that if the total entropy change is positive then the GFE change is negative.
+$$
+   Delta S_{\text{total}} \geq \Leftrightarrow \delta G \leq 0
+   \label{eq:equivalence_second_law_to_negative_gfe_change}
+$$ 
+
+*Proceeding...*, first recognize the heat absorbed by the surroundings \footnote{By which we mean the rest of the universe but practically speaking we can probably limit this to Earth and possibly even the lab table.} equals that produced by the system:
+\footnote{This follows from other aspects of basic thermodynamics, but even right now I do not understand why the universe entropy is solely related to the heat and not to physical work.  But its freshman physics that i just need to review later.} 
+\footnote{Actually some of the heat can remain in the system but nevermind all these complications.}
+$$
+   Delta S_{\text{surroundings}} = -\frac{\Delta Q_{system}}{T}
+   \label{eq:heat_absorbed_by_surroundings}
+$$
+with the negative sign reflecting that heat absorbed by the surroundings is the negative of that emitted by the system (*i.e.*, the subscript "system" is not a typo). We may thus write:
+$$
+\Delta S_{\text{system}} + \Delta S_{\text{surroundings}} =
+\Delta S_{\text{system}} - \frac{\Delta Q_{system}}{T}
+\label{eq:second_law}
+$$
+
 
 
 ### Absolute Chemical Potential Log Term
