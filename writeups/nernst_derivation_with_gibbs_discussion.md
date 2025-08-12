@@ -126,16 +126,14 @@ $$
 \label{eq:second_law}
 $$
 
-**Outline of Proof** Under conditions of constant temperature and pressure, we will show the Second Law \eqref{eq:second_law} implies or is equivalent to the claim. *I.e.*, that if the total entropy change is positive then the GFE change is negative.
+**Outline of Proof** Under conditions of constant temperature and pressure, we will show a negative Gibbs free energy change is equivalent to and follows logically from \eqref{eq:second_law}:
 
 $$
-   Delta S_{\text{total}} \geq \Leftrightarrow \delta G \leq 0
+   \Delta S_{\text{total}} \geq \Leftrightarrow \Delta G \leq 0
    \label{eq:equivalence_second_law_to_negative_gfe_change}
 $$ 
 
-Proceeding, first recognize the heat absorbed by the surroundings \footnote{By which we mean the rest of the universe but practically speaking we can probably limit this to Earth and possibly even the lab table.} equals that produced by the system:
-\footnote{This follows from other aspects of basic thermodynamics, but even right now I do not understand why the universe entropy is solely related to the heat and not to physical work.  But its freshman physics that i just need to review later.} 
-\footnote{Actually some of the heat can remain in the system but nevermind all these complications.}
+Proceeding, first recognize the heat absorbed by the surroundings (by which we mean strictly the rest of the universe outside the system of interest) equals that produced by the system:
 
 $$
    Delta S_{\text{surroundings}} = -\frac{\Delta Q_{system}}{T}
@@ -149,14 +147,14 @@ $$
 \Delta S_{\text{system}} - \frac{\Delta Q_{system}}{T}
 $$
 
-Recognizing that system enthalpy equals the heat absorbed by the system, $\Delta H_{system} = \Delta Q_{system}$ and also multiplying through by $-T$:
+Recognizing that system enthalpy equals the heat absorbed by it (the system), $\Delta H_{system} = \Delta Q_{system}$ and also multiplying through by $-T$ we obtain:
 
 $$
 \Delta H_{system} - T \cdot \Delta S_{system} \leq 0
 \label{eq:gibbs_change_equivalent}
 $$
 
-where we were careful to reverse the previously $\geq$ sign.  Recall the definition of GFE is:
+where we were careful to reverse the previously $\geq$ sign.  Recall the Gibbs free energy can be written as (or possibly taken as *defined* as):
 
 $$
 G = H - T \cdot S
