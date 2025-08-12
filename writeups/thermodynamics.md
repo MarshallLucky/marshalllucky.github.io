@@ -21,15 +21,18 @@ Unauthorized copying or distribution of this document, in whole or in part, is p
 ## Enthalpy is Heat Absorbed under Constant Pressure
 Claim: The change in enthalpy, $ \Delta H $ is the heat absorbed (or released) by a system that undergoes a state change under conditions of constant pressure.  To see this, note that enthalpy is defined as:
 
-$ H = E + P \cdot V $
+$$ H = E + P \cdot V $$
 
 so that the enthalpy change due to the state change is:
 
-$ \Delta H = \Delta E + P \cdot \Delta V $
+$$ 
+\Delta H = \Delta E + P \cdot \Delta V 
+\label{eq:enthalpy_differential}
+$$
 
 but what is $ \Delta E $ ?  It is the change in the internal energy of the system which is in turn equal to the heat absorbed less the work done by the system:
 
-$ \Delta E = q + w = q - P \cdot \Delta V $
+$$ \Delta E = q + w = q - P \cdot \Delta V $$
 
 where again we are assuming $ \Delta P = 0 $ since the state change is assumed to take place under conditions of constant pressure.  Let us now use this last relation to rexpress the enthalpy change as:
 
@@ -38,6 +41,8 @@ $ \Delta H = \Delta E + P \cdot \Delta V = q - P \cdot \Delta V + P \cdot \Delta
 and thus we arrive at our original claim that the enthalpy is the amount of heat absorbed by the system as a consequence of a state change, i.e., the energy change of the system due to heat absorbed, only:
 
 $ \Delta H = q $.
+
+## Free Energy
 
 ### Gibbs Free Energy (GFE)
 The claim is that reactions (or more generally, 'actions' period) are spontaneous *under conditions of constant temperature and constant pressure* if and only if the GFE change is negative.  Put another way, if there is positive GFE, reactions will go forward. Perhaps we can think of  GFE as a generalized fuel (that can take negative values) for a vehicle that will always 'go' if it has said fuel.
@@ -71,6 +76,7 @@ with the negative sign reflecting that heat absorbed by the surroundings is the 
 $$
 \Delta S_{\text{system}} + \Delta S_{\text{surroundings}} =
 \Delta S_{\text{system}} - \frac{\Delta Q_{system}}{T}
+\label{eq:entropy_condition_in_terms_system_heat}
 $$
 
 Recognizing that system enthalpy equals the heat absorbed by it (the system), $\Delta H_{system} = \Delta Q_{system}$, and also multiplying through by negative $T$ we obtain:
@@ -93,3 +99,41 @@ $$
 $$
 
 which proves \eqref{eq:equivalence_second_law_to_negative_gfe_change}.
+
+### Helmholtz Free Energy
+Under conditions of constant pressure and temperature, the condition for spontaneity is a negative Gibbs free energy change.  If volume is constant instead of pressure, the condition is that the *Helmholtz* free energy is negative.  The derivation is highly similar but there are some important conceptual physical differences.  
+
+In the Gibbs case, we identified the heat absorbed by the system as the enthalpy (indeed this can be considered the definition of enthalpy). As noted in Equation \eqref{eq:enthalpy_differential} above, enthalpy just subtracts off the work component of the total internal energy change, to carve out the heat contribution.  This is what the surrounding environment absorbs and is what determines its entropy change, see \eqref{eq:second_law}.  In the Helmholtz case, $V$ is constant and there is no work, *i.e.*, the internal energy change $\Delta E$ is already pure heat and there is nothing to subtract.  Hence in the Helmholtz case we work directly with $E$ and $\Delta E$instead of enthalpy.
+
+
+**Outline of Helmholtz Proof** 
+Under conditions of constant temperature and *volume*, we will show a negative *Helmholtz* free energy change is equivalent to and follows logically from \eqref{eq:second_law}:
+
+$$
+   \Delta S_{\text{total}} \geq 0 \; \Leftrightarrow \; \Delta F \leq 0
+   \label{eq:equivalence_second_law_to_negative_hfe_change}
+$$ 
+
+**Proceeding**
+Again, as in the Gibbs case, the heat absorbed by the surroundings equals that produced by the system, see \equref{eq:heat_absorbed_by_surroundings}.  Thus we have again Equation \eqref{eq:entropy_condition_in_terms_system_heat}.  Now however, in the constant volume (and N and T) case, we recognize the heat absorbed by the system as the internal energy change directly (instead of using enthalpy), $\Delta E_{system} = \Delta Q_{system}$ ,and we write the next equations in such terms:
+
+$$
+\Delta E_{system} - T \cdot \Delta S_{system} \leq 0
+\label{eq:helmholtz_change_equivalent}
+$$
+
+which is analogous to \label{eq:gibbs_change_equivalent}.  However, we now identify the Helmholtz free energy 
+
+$$
+F = E - T \cdot S
+$$
+
+the differential form of which is $\Delta F=\Delta E-T\cdot \Delta S$ so that we may reexpress \eqref{eq:helmholtz_change_equivalent} as 
+
+$$
+\Delta F_{system} \leq 0
+$$
+
+which proves \eqref{eq:equivalence_second_law_to_negative_hfe_change}.
+
+
