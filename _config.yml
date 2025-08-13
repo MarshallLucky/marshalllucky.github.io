@@ -1,4 +1,4 @@
-markdown: kramdown
-kramdown:
-  input: GFM
-  math_engine: mathjax
+markdown: kramdown      # default Markdown processor Jekyll uses
+kramdown:               # it's a Ruby library that converts Markdown into HTML, and supports footnotes, tables, math
+  input: GFM            # GitHub Flavored Markdown
+  math_engine: mathjax  # render LaTeX math using MathJax
