@@ -125,6 +125,9 @@ $$
 
 **Goal:** Starting from basic statistical-mechanical definitions, derive the chemical potential for the NPT ensemble, show exactly where the logarithmic term appears, and examine the dimensional consistency. We highlight that, while the final expression works in practice, there is a subtle flaw in the units analysis of the NPT partition function definition.
 
+### Conclusions of the Following Analysis
+To summarize, spoiler alert, the log term is introduced by the definition of the Gibbs free energy, which is the logarithm of the N-P-T partition function, see \eqref{nernst:eq:Gibbs_from_Delta.  The chemical potential  in turn is the derivative of the GFE with respect to N, see \eqref{nernst:eq:mu_particle}}.  In our case, we are assuming ideal conditions so that the NPT partition function is easily computed, as also shown in \eqref{nernst:eq:mu_particle}}.  Note the partial derivative is with respect to $N$ so that the natural log term, whose argument is the species concentration, is a constant inasfar as the partial is concerned.  Nevertheless, our goal was to show where the $\ln{[C]}$ came from and we have achieved this goal.
+
 ---
 
 ### 1. Basic Definitions
@@ -261,7 +264,7 @@ $$
 \label{nernst:eq:mu_particle}
 $$
 
-This is **exact** for the ideal gas expression in Eq. $\ref{nernst:eq:Gibbs_simplified}$; no $O(1/N)$ corrections appear.
+This is **exact** for the ideal gas expression in Eq. $\ref{nernst:eq:Gibbs_simplified}$.
 
 ---
 
