@@ -137,6 +137,17 @@ $$
 \label{nernst:eq:lambda_def}
 $$
 
+#### 1.1 Physical Meaning and Dependence
+
+The **thermal de Broglie wavelength** $\Lambda$ represents the characteristic quantum “spread” of a particle’s position due to its thermal motion. It comes from the non-relativistic de Broglie relation $\lambda = h/p$ with the momentum scale set by the root-mean-square thermal momentum $p_{\mathrm{th}} \sim \sqrt{2\pi m k_B T}$. The result,
+
+$$
+\Lambda = \sqrt{\frac{h^{2}}{2\pi m k_B T}},
+$$
+
+shows that $\Lambda$ decreases with increasing particle mass $m$ (heavier particles have shorter thermal wavelengths) and decreases with increasing temperature $T$ (hotter particles have higher momentum and thus shorter wavelengths). For light particles at low temperatures, $\Lambda$ can become comparable to or exceed the average interparticle spacing, at which point quantum statistics (Bose–Einstein or Fermi–Dirac) become important.
+
+
 2. **Canonical (NVT) partition function** for a classical ideal gas:  
 
 $$
