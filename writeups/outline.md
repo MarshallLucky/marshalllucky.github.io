@@ -20,6 +20,7 @@ permalink: /writeups/outline/
   - Donnan model study
     - Donnan Equation of State
       -As per paper "The Donnan Equilibrium: I. On teh thermodynamic foundation of the Donnan EOS," Philipse and Vrij, 2011.
+      - Derivation from first (thermodynamic principles)  
 **Keywords:** templates, TODO  
 
 © 2025 Todd R. Story — All rights reserved.  

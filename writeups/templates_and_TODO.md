@@ -6,12 +6,17 @@ permalink: /writeups/templates_and_TODO/
 
 # Header Template and TODO List
 
-**Author:** Todd R. Story  
-**Date Created:** 2025-08-12  
+**Author:** Todd R. Story 
+
+**Date Created:** 2025-08-12 
+
 **Last Modified:** 
+
 **Description:**  Short description here. 
+
 **TODO:** 
 - This is the TODO list of things to do to improve *this document*
+
 **Keywords:** templates, TODO  
 
 © 2025 Todd R. Story — All rights reserved.  
