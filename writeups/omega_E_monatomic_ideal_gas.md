@@ -216,17 +216,17 @@ Thus $\Omega(E)$ plays the exact same mathematical role for the microcanonical e
 - The associated thermodynamic potential ($S, F, \Phi$) is obtained by taking the logarithm.  
 - Therefore, $\Omega(E)$ **is the partition function of the microcanonical ensemble**.
 
-## The \(N,P,T\) Ensemble and the Laplace Transform
+## The $N,P,T$ Ensemble and the Laplace Transform
 
-In the canonical ensemble (\(N,V,T\)), the partition function is
+In the canonical ensemble ($N,V,T$), the partition function is
 
 $$
 Z(N,V,T) = \sum_{\text{microstates}} e^{-\beta E_i},
 $$
 
-where the volume \(V\) is fixed.  
+where the volume $V$ is fixed.  
 
-For the isothermal–isobaric ensemble (\(N,P,T\)), the volume is not fixed but allowed to fluctuate under an external pressure \(P\). Each microstate is therefore characterized by both an energy \(E_i\) and a volume \(V_i\). To account for these fluctuations, the probability weight includes an extra Boltzmann factor for the \(P V\) work term:
+For the isothermal–isobaric ensemble ($N,P,T$), the volume is not fixed but allowed to fluctuate under an external pressure $P$. Each microstate is therefore characterized by both an energy $E_i$ and a volume $V_i$. To account for these fluctuations, the probability weight includes an extra Boltzmann factor for the $P V$ work term:
 
 $$
 \text{weight} \;\propto\; e^{-\beta(E_i + P V_i)}.
@@ -241,20 +241,20 @@ $$
 ---
 
 ### Laplace Transform of the Canonical Partition Function
-Notice that if we first sum over microstates at fixed volume, we obtain the canonical partition function \(Z(N,V,T)\). The \(N,P,T\) partition function is then
+Notice that if we first sum over microstates at fixed volume, we obtain the canonical partition function $Z(N,V,T)$. The $N,P,T$ partition function is then
 
 $$
 \Delta(N,P,T) = \int_0^\infty dV \; e^{-\beta P V} \, Z(N,V,T).
 $$
 
-This is exactly the **Laplace transform** of the canonical partition function \(Z(N,V,T)\) with respect to the volume variable \(V\), with Laplace variable \(\beta P\).
+This is exactly the **Laplace transform** of the canonical partition function $Z(N,V,T)$ with respect to the volume variable $V$, with Laplace variable $\beta P$.
 
 ---
 
 ### Why a Laplace Transform?
-- The canonical ensemble fixes \(V\).  
-- The \(N,P,T\) ensemble averages over all possible \(V\), weighted by the factor \(e^{-\beta P V}\) that accounts for the mechanical work required to maintain constant pressure.  
-- Mathematically, this averaging procedure is precisely the Laplace transform, which converts a function of \(V\) into a function of its conjugate variable \(\beta P\).  
+- The canonical ensemble fixes $V$.  
+- The $N,P,T$ ensemble averages over all possible $V$, weighted by the factor $e^{-\beta P V}$ that accounts for the mechanical work required to maintain constant pressure.  
+- Mathematically, this averaging procedure is precisely the Laplace transform, which converts a function of $V$ into a function of its conjugate variable $\beta P$.  
 
 ---
 
@@ -265,22 +265,22 @@ $$
 G(N,P,T) = -k_B T \ln \Delta(N,P,T).
 $$
 
-Thus, just as \(Z\) generates the Helmholtz free energy in the canonical ensemble, \(\Delta\) generates the Gibbs free energy in the isothermal–isobaric ensemble.
+Thus, just as $Z$ generates the Helmholtz free energy in the canonical ensemble, $\Delta$ generates the Gibbs free energy in the isothermal–isobaric ensemble.
 
 ---
 
 ### Sidebar: Chain of Transforms Between Ensembles
 There is a unifying pattern across ensembles:
 
-1. **Microcanonical \((N,V,E)\):** partition function is the density of states \(\Omega(E)\).  
+1. **Microcanonical $(N,V,E)$:** partition function is the density of states $\Omega(E)$.  
 
-   - Probability: all states with \(E\) are equally likely.  
+   - Probability: all states with $E$ are equally likely.  
    - Thermodynamic potential:  
      $$
      S = k_B \ln \Omega(E).
      $$
 
-2. **Canonical \((N,V,T)\):** obtained from the microcanonical by a **Laplace transform in energy**,
+2. **Canonical $(N,V,T)$:** obtained from the microcanonical by a **Laplace transform in energy**,
    $$
    Z(N,V,T) = \int_0^\infty dE \; e^{-\beta E}\, \Omega(E).
    $$
@@ -289,7 +289,7 @@ There is a unifying pattern across ensembles:
      F = -k_B T \ln Z.
      $$
 
-3. **Isothermal–Isobaric \((N,P,T)\):** obtained from the canonical by a **Laplace transform in volume**,
+3. **Isothermal–Isobaric $(N,P,T)$:** obtained from the canonical by a **Laplace transform in volume**,
    $$
    \Delta(N,P,T) = \int_0^\infty dV \; e^{-\beta P V}\, Z(N,V,T).
    $$
@@ -298,11 +298,11 @@ There is a unifying pattern across ensembles:
      G = -k_B T \ln \Delta.
      $$
 
-4. **Grand Canonical \((\mu,V,T)\):** obtained from the canonical by a **generating-function sum over particle number**, often described as a fugacity-weighted series:
+4. **Grand Canonical $(\mu,V,T)$:** obtained from the canonical by a **generating-function sum over particle number**, often described as a fugacity-weighted series:
    $$
    \mathcal{Z}(\mu,V,T) = \sum_{N=0}^\infty e^{\beta \mu N} \, Z(N,V,T).
    $$
-   - This plays a role similar to a Laplace transform in \(N\), with conjugate variable \(\beta \mu\).  
+   - This plays a role similar to a Laplace transform in $N$, with conjugate variable $\beta \mu$.  
    - Thermodynamic potential:  
      $$
      \Phi = -k_B T \ln \mathcal{Z}.
@@ -324,10 +324,10 @@ There is a unifying pattern across ensembles:
 ### Big Picture: Connection to Legendre Transforms
 This hierarchy of ensembles mirrors the structure of **Legendre transforms** in thermodynamics:
 
-- Microcanonical ensemble ↔ internal energy \(U(E,V,N)\).  
-- Canonical ensemble ↔ Helmholtz free energy \(F = U - TS\).  
-- Isothermal–Isobaric ensemble ↔ Gibbs free energy \(G = U - TS + PV\).  
-- Grand canonical ensemble ↔ grand potential \(\Phi = U - TS - \mu N\).  
+- Microcanonical ensemble ↔ internal energy $U(E,V,N)$.  
+- Canonical ensemble ↔ Helmholtz free energy $F = U - TS$.  
+- Isothermal–Isobaric ensemble ↔ Gibbs free energy $G = U - TS + PV$.  
+- Grand canonical ensemble ↔ grand potential $\Phi = U - TS - \mu N$.  
 
 Each new ensemble is generated by transforming in the variable that is allowed to fluctuate (energy, volume, or particle number). The partition function formalism and the Legendre-transform formalism are two sides of the same coin: one statistical, the other thermodynamic. Together, they show how **ensembles, partition functions, and thermodynamic potentials form a tightly interconnected hierarchy**.
 
