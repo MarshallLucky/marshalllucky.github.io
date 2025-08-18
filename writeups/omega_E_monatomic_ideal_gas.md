@@ -1,7 +1,7 @@
 ---
 title: Microstates Function for a Monatomic Ideal Gas
 layout: default
-permalink: /writeups/pomega_E_monatomic_ideal_gas/
+permalink: /writeups/omega_E_monatomic_ideal_gas/
 ---
 
 **Author:** Todd R. Story  
