@@ -64,8 +64,16 @@ $$
 \frac{\partial \ln(\Omega(E))}{\partial E} = \frac{\partial \ln(\Omega(E')}{\partial E'}
 $$
 
-Defining $\beta(E) \equiv \nicefrac{\partial \ln(\Omega(E)) }{\partial E}$ the above becomes:
+Defining $\beta(E) \equiv \nicefrac{\partial \ln(\Omega(E)) }{\partial E}=\nicefrac{1}{k_{B}T}$, with $T$ "defined for convenience" the above becomes:
 
 $$
 \beta(\tilde{E})=\beta'(\tilde{E}')
 $$
+
+or in other words:
+
+$$
+\tilde{T})=\tilde{T}'
+$$
+
+It seems Reif has done some sleight-of-hand in introducing $T$, obviously intended as the thermodynamic temperature, but he has not discussed it much.  Apparently, his intention in the following pages is to show $T$ has all the intuitive properties we would expect.  But I find this confusing.  

@@ -49,3 +49,6 @@ Unauthorized copying or distribution of this document, in whole or in part, is p
       - Jarzynski equality for free energy differences
       - Stratonovich vs Itô calculus for noise handling in modeling
       - Interpretation matters: Stratonovich preserves the chain rule, Itô adds correction.
+
+## Questions
+1. What is the relationship between thermodynamics and information theory?
