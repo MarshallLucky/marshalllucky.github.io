@@ -64,8 +64,8 @@ $$
 \frac{\partial \ln(\Omega(E))}{\partial E} = \frac{\partial \ln(\Omega(E')}{\partial E'}
 $$
 
-Defining $\beta(E) \equiv \frac{\partial \ln(\Omega(E)) }{\partial E}$ the above becomes:
+Defining $\beta(E) \equiv \nicefrac{\partial \ln(\Omega(E)) }{\partial E}$ the above becomes:
 
 $$
-\beta(\tilde(E))=\beta(\tilde(E')')
+\beta(\tilde{E})=\beta'(\tilde{E}')
 $$
