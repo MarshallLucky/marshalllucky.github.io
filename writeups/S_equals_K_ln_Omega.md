@@ -54,8 +54,18 @@ To find the maximum, differentitate and set to zero:
 
 $$
 \begin{align}
-0 = \frac{\partial \ln(\Omega(E))}{\partial E} + \frac{\partial \ln(\Omega(E')}{\partial E} =  \frac{\partial \ln(\Omega(E))}{\partial E} - \frac{\partial \ln(\Omega(E')}{\partial E'}
+0 &= \frac{\partial \ln(\Omega(E))}{\partial E} + \frac{\partial \ln(\Omega(E')}{\partial E} &=  \frac{\partial \ln(\Omega(E))}{\partial E} - \frac{\partial \ln(\Omega(E')}{\partial E'}
 \end{align}
 $$
 
-Notice in the second term we switched from the partial with respect to $E$ to $E'$, thus since $E'=E^{0}-E$ we obtain the minus sign.  
+Notice in the second term we switched from the partial with respect to $E$ to $E'$, thus since $E'=E^{0}-E$ we obtain the minus sign, thus:
+
+$$
+\frac{\partial \ln(\Omega(E))}{\partial E} = \frac{\partial \ln(\Omega(E')}{\partial E'}
+$$
+
+Defining $\beta(E) \equiv \frac{\partial \ln(\Omega(E)) }{\partial E}$ the above becomes:
+
+$$
+\beta(\tilde(E))=\beta(\tilde(E')')
+$$
