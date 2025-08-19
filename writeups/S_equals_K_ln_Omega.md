@@ -38,9 +38,24 @@ The question is, what is the macroscopic value of $E$, asked in the thermodynami
 * **CONSTANT: The probability of each system microstate**
   - This is a fundamental assumption in statistical mechanics. Thus, plot spoiler, such extreme energy states as mentioned in the previous bullet point are in theory possible but unlikely.  
 
-  The probability $P(E)$ of finding $A$ subsystem in state with energy $E=E^{(0)}-E'$ is assumed proportional to the total number of microstates available to the *total system* $A^{0}$ which in turn is proportional to the product of the respective number of microstates available to each subsystem under these conditions:
+The probability $P(E)$ of finding $A$ subsystem in state with energy $E=E^{(0)}-E'$ is assumed proportional to the total number of microstates available to the *total system* $A^{0}$ which in turn is proportional to the product of the respective number of microstates available to each subsystem under these conditions:
 
-  $$
-  P(E) = C\cdot \Omega(E^{0}) = C\cdot \Omega(E) \cdot \Omega(E^{0}-E)
-  $$  
+$$
+P(E) = C\cdot \Omega(E^{0}) = C\cdot \Omega(E) \cdot \Omega(E^{0}-E)
+$$  
 
+$\Omega(E)$ and $\Omega(E^{0}-E)$ are extremely high increasing and decreasing functions of subsystem $A$'s energy $E$, so that the above probability exhibits a sharply peaked maximum.  Taking the natural log (WHY DO WE DO THIS?):
+
+$$
+\ln(P(E)) = \ln(C) + \ln(\Omega(E^{0})) + \ln(\Omega(E^{0}-E))
+$$  
+
+To find the maximum, differentitate and set to zero:
+
+$$
+\begin{align}
+0 = \frac{\partial \ln(\Omega(E^{0}))}{\partial E} + \frac{\partial \ln(\Omega(E')}{\partial E} =  \frac{\partial \ln(\Omega(E^{0}))}{\partial E} + \frac{\partial \ln(\Omega(E')}{\partial E'}
+\end{align}
+$$
+
+Notice in the second term we switched from the partial with respect to $E$ to $E'$, thus since $E'=E^{0}-E$ we obtain the minus sign.  
