@@ -47,14 +47,14 @@ $$
 $\Omega(E)$ and $\Omega(E^{0}-E)$ are extremely high increasing and decreasing functions of subsystem $A$'s energy $E$, so that the above probability exhibits a sharply peaked maximum.  Taking the natural log (WHY DO WE DO THIS?):
 
 $$
-\ln(P(E)) = \ln(C) + \ln(\Omega(E^{0})) + \ln(\Omega(E^{0}-E))
+\ln(P(E)) = \ln(C) + \ln(\Omega(E)) + \ln(\Omega(E^{0}-E))
 $$  
 
 To find the maximum, differentitate and set to zero:
 
 $$
 \begin{align}
-0 = \frac{\partial \ln(\Omega(E^{0}))}{\partial E} + \frac{\partial \ln(\Omega(E')}{\partial E} =  \frac{\partial \ln(\Omega(E^{0}))}{\partial E} + \frac{\partial \ln(\Omega(E')}{\partial E'}
+0 = \frac{\partial \ln(\Omega(E))}{\partial E} + \frac{\partial \ln(\Omega(E')}{\partial E} =  \frac{\partial \ln(\Omega(E))}{\partial E} - \frac{\partial \ln(\Omega(E')}{\partial E'}
 \end{align}
 $$
 
