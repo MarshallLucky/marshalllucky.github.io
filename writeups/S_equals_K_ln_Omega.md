@@ -64,7 +64,7 @@ $$
 \frac{\partial \ln(\Omega(E))}{\partial E} = \frac{\partial \ln(\Omega(E')}{\partial E'}
 $$
 
-Defining $\beta(E) \equiv \nicefrac{\partial \ln(\Omega(E)) }{\partial E}=\nicefrac{1}{k_{B}T}$, with $T$ "defined for convenience" the above becomes:
+Defining $\beta(E) \equiv \tfrac{\partial \ln(\Omega(E)) }{\partial E}=\tfrac{1}{k_{B}T}$, with $T$ "defined for convenience" the above becomes:
 
 $$
 \beta(\tilde{E})=\beta'(\tilde{E}')
