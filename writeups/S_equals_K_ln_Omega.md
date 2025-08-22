@@ -76,4 +76,8 @@ $$
 \tilde{T})=\tilde{T}'
 $$
 
-It seems Reif has done some sleight-of-hand in introducing $T$, obviously intended as the thermodynamic temperature, but he has not discussed it much.  Apparently, his intention in the following pages is to show $T$ has all the intuitive properties we would expect.  But I find this confusing.  
+## Status 
+It seems Reif has introduced $T$, obviously intended as the thermodynamic temperature, but he has not specifically identified it as such, at least not before Section 3.4  Apparently, his intention in the following pages is to show $T$ has all the intuitive properties we would expect and otherwise show us that it is/must be the temperature we are all familiar with.  Will all be revealed...read on to find out. 
+
+## TODO
+1. Continue this discussion to add how $T$ above is connected with our physical idea of temperature.
