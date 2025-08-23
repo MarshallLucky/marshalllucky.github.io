@@ -62,6 +62,13 @@ Unauthorized copying or distribution of this document, in whole or in part, is p
 
 # **Physical Chemistry – Full Multi-Level Outline with Sources**
 
+This outline of p-chem is from ChatGPT, here is a link to the TOC of a proper textbook on the subject:
+
+[📄 View PDF: Hammes – Physical Chemistry (TOC Only)](/writeups/sources/Hammes_Physical_Chemistry_TOC_only.pdf)
+
+*File location:* `writeups/sources/Hammes_Physical_Chemistry_TOC_only.pdf`
+
+
 
 ## **I. Foundations**
 1. **Basic Principles**
