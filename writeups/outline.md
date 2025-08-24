@@ -320,6 +320,7 @@ This outline of p-chem is from ChatGPT, here is a link to the TOC of a proper te
        - *de Groot & Mazur – Non-Equilibrium Thermodynamics*  
    - Entropy production in living systems  
        - *Hill – Free Energy Transduction and Biochemical Cycle Kinetics*  
+       
 ---
 
 # **Cell Biology – Full Multi-Level Outline with Sources**
