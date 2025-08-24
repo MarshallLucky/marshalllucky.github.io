@@ -320,10 +320,6 @@ This outline of p-chem is from ChatGPT, here is a link to the TOC of a proper te
        - *de Groot & Mazur – Non-Equilibrium Thermodynamics*  
    - Entropy production in living systems  
        - *Hill – Free Energy Transduction and Biochemical Cycle Kinetics*  
-
----
-
-
 ---
 
 # **Cell Biology – Full Multi-Level Outline with Sources**
@@ -333,4 +329,14 @@ This outline of cell biology is from ChatGPT, here is a link to the TOC of a pro
 [📄 View PDF: Alberts et al – Molecular Biology of the Cell (TOC/Front Matter Only)](/writeups/sources/MBoC_5Ed_FrontMatter.pdf)
 
 *File location:* `writeups/sources/MBoC_5Ed_FrontMatter.pdf`
+
+---
+
+# **Biochemistry – Full Multi-Level Outline with Sources**
+
+This outline of biochemistry is from ChatGPT, here is a link to the TOC of a proper textbook (Lehninger, 6th Edition) on the subject:
+
+[📄 View PDF: Nelson and Cox – Principles of Biochemistry, 6th Edition (TOC/Front Matter Only)](/writeups/sources/Lehninger6thEd_FrontMatter.pdf)
+
+*File location:* `writeups/sources/Lehninger6thEd_FrontMatter.pdf`
 
