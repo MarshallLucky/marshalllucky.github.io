@@ -320,7 +320,7 @@ This outline of p-chem is from ChatGPT, here is a link to the TOC of a proper te
        - *de Groot & Mazur – Non-Equilibrium Thermodynamics*  
    - Entropy production in living systems  
        - *Hill – Free Energy Transduction and Biochemical Cycle Kinetics*  
-       
+
 ---
 
 # **Cell Biology – Full Multi-Level Outline with Sources**
@@ -331,6 +331,216 @@ This outline of cell biology is from ChatGPT, here is a link to the TOC of a pro
 
 *File location:* `writeups/sources/MBoC_5Ed_FrontMatter.pdf`
 
+# **Cell Biology – Full Multi-Level Outline with Sources and Overlap Points**
+
+---
+
+## **I. Introduction to Cells**
+1. **Fundamental Concepts**
+   - The cell as the basic unit of life  
+       - *Molecular Biology of the Cell – Alberts et al.*  
+       - *Essential Cell Biology – Alberts et al.*  
+   - History of cell theory  
+       - *Alberts*  
+       - *Karp – Cell and Molecular Biology*  
+   - Overview of cell types (prokaryotic, eukaryotic)  
+       - *Alberts*  
+       - *Lodish – Molecular Cell Biology*  
+   - Overlap with Physical Chemistry  
+       - Thermodynamics and energy transduction in cells (*Atkins*, *Hammes*)  
+
+2. **Chemistry of Life**
+   - Water and noncovalent interactions  
+       - *Alberts*  
+       - *Lehninger Principles of Biochemistry – Nelson & Cox*  
+   - pH, buffers, and biological relevance  
+       - *Hammes – Physical Chemistry for the Biological Sciences*  
+   - Macromolecules: proteins, nucleic acids, polysaccharides, lipids  
+       - *Alberts*  
+       - *Voet & Voet – Biochemistry*  
+
+---
+
+## **II. Cell Chemistry and Bioenergetics**
+1. **Biological Macromolecules**
+   - Structure and properties of amino acids, nucleotides, sugars, lipids  
+       - *Alberts*  
+       - *Lehninger*  
+
+2. **Enzymes and Catalysis**
+   - Enzyme structure, active sites, cofactors  
+       - *Alberts*  
+       - *Berg – Biochemistry*  
+   - Kinetics: Michaelis–Menten and regulation  
+       - *Hammes – Physical Chemistry for the Biological Sciences*  
+       - *Laidler – Chemical Kinetics*  
+   - Overlap: Chemical kinetics and transition-state theory (*Atkins*, *McQuarrie*)  
+
+3. **Energy Conversion**
+   - Laws of thermodynamics in cells  
+       - *Alberts*  
+       - *Hammes*  
+   - Free energy, coupled reactions, and metabolic pathways  
+       - *Alberts*  
+       - *Lehninger*  
+   - Overlap: ΔG, ΔH, ΔS relationships (*Callen*, *Atkins*)  
+
+---
+
+## **III. Cell Structure and Organization**
+1. **Plasma Membrane**
+   - Lipid bilayer, membrane proteins  
+       - *Alberts*  
+       - *Lodish*  
+   - Membrane dynamics and transport mechanisms  
+       - *Alberts*  
+       - *Hammes*  
+   - Overlap: Electrochemical potentials and Nernst equation (*Hammes*, *Alberty*)  
+
+2. **Internal Membranes and Organelles**
+   - ER, Golgi, vesicular trafficking  
+       - *Alberts*  
+       - *Karp*  
+   - Lysosomes, peroxisomes  
+       - *Alberts*  
+   - Mitochondria and chloroplasts  
+       - *Alberts*  
+       - *Nicholls & Ferguson – Bioenergetics*  
+   - Overlap: Proton-motive force and chemiosmosis (*Hammes*, *Alberty*)  
+
+---
+
+## **IV. Genetic Information**
+1. **DNA Structure and Replication**
+   - DNA double helix, chromatin  
+       - *Alberts*  
+       - *Watson – Molecular Biology of the Gene*  
+   - Replication mechanisms and enzymes  
+       - *Alberts*  
+
+2. **RNA and Transcription**
+   - RNA polymerases, transcription factors  
+       - *Alberts*  
+       - *Lodish*  
+
+3. **Protein Synthesis**
+   - Ribosomes, tRNAs, initiation/elongation/termination  
+       - *Alberts*  
+       - *Berg – Biochemistry*  
+
+4. **Regulation of Gene Expression**
+   - Epigenetics, chromatin remodeling  
+       - *Alberts*  
+       - *Kornberg – Chromatin Structure*  
+
+---
+
+## **V. Membrane Transport and Signal Transduction**
+1. **Transport Mechanisms**
+   - Passive diffusion, facilitated transport  
+       - *Alberts*  
+       - *Hammes*  
+   - Active transport and ATP-driven pumps  
+       - *Alberts*  
+       - *Hille – Ion Channels of Excitable Membranes*  
+   - Overlap: Gibbs energy and electrochemical gradients (*Hammes*, *Alberty*)  
+
+2. **Cell Signaling**
+   - Receptor types: GPCR, RTK  
+       - *Alberts*  
+       - *Lodish*  
+   - Second messenger systems  
+       - *Alberts*  
+   - Overlap: Thermodynamic limits of signaling and binding kinetics (*Hammes*)  
+
+---
+
+## **VI. Cytoskeleton and Intracellular Transport**
+1. **Actin Filaments**
+   - Structure, treadmilling, regulation  
+       - *Alberts*  
+
+2. **Microtubules and Motors**
+   - Kinesin, dynein, intracellular trafficking  
+       - *Alberts*  
+       - *Howard – Mechanics of Motor Proteins and the Cytoskeleton*  
+   - Overlap: Free energy from ATP hydrolysis powering mechanical work (*Hammes*)  
+
+3. **Intermediate Filaments**
+   - Structural support  
+       - *Alberts*  
+
+---
+
+## **VII. Cell Cycle, Division, and Death**
+1. **Cell Cycle Regulation**
+   - Cyclins, CDKs, checkpoints  
+       - *Alberts*  
+
+2. **Mitosis and Meiosis**
+   - Chromosome segregation  
+       - *Alberts*  
+
+3. **Apoptosis and Autophagy**
+   - Pathways and significance  
+       - *Alberts*  
+
+---
+
+## **VIII. Intercellular Communication and Development**
+1. **Extracellular Matrix and Cell Adhesion**
+   - Integrins, ECM components  
+       - *Alberts*  
+
+2. **Cell–Cell Junctions**
+   - Tight junctions, desmosomes, gap junctions  
+       - *Alberts*  
+
+3. **Developmental Programs**
+   - Differentiation and morphogenesis  
+       - *Gilbert – Developmental Biology*  
+       - *Alberts*  
+
+---
+
+## **IX. Specialized Cells and Systems**
+1. **Neurons**
+   - Membrane excitability and synaptic transmission  
+       - *Kandel – Principles of Neural Science*  
+       - *Hille*  
+   - Overlap: Action potentials and Nernst/Goldman equations (*Hammes*)  
+
+2. **Immune System Cells**
+   - Innate and adaptive immunity basics  
+       - *Janeway’s Immunobiology – Murphy*  
+       - *Alberts*  
+
+---
+
+## **X. Experimental Methods in Cell Biology**
+1. **Microscopy Techniques**
+   - Light, fluorescence, and electron microscopy  
+       - *Alberts*  
+
+2. **Molecular Techniques**
+   - CRISPR, RNAi, recombinant DNA  
+       - *Alberts*  
+       - *Lodish*  
+
+3. **Systems Approaches**
+   - Genomics, proteomics, single-cell analysis  
+       - *Alberts*  
+
+---
+
+### **Key Overlap Points with Physical Chemistry**
+- **Bioenergetics:** Gibbs free energy, chemical potentials (ATP hydrolysis, redox)  
+- **Electrochemistry:** Nernst equation, membrane potentials, proton-motive force  
+- **Kinetics:** Enzyme mechanisms, Michaelis–Menten vs transition-state theory  
+- **Thermodynamics:** Entropy in folding, stability of macromolecules, osmotic pressure  
+- **Spectroscopy:** NMR and fluorescence for structural biology  
+
+
 ---
 
 # **Biochemistry – Full Multi-Level Outline with Sources**
@@ -340,4 +550,175 @@ This outline of biochemistry is from ChatGPT, here is a link to the TOC of a pro
 [📄 View PDF: Nelson and Cox – Principles of Biochemistry, 6th Edition (TOC/Front Matter Only)](/writeups/sources/Lehninger6thEd_FrontMatter.pdf)
 
 *File location:* `writeups/sources/Lehninger6thEd_FrontMatter.pdf`
+---
 
+## **I. Foundations of Biochemistry**
+1. **Cellular Foundations**
+   - Cell structure and compartments  
+       - *Lehninger Principles of Biochemistry – Nelson & Cox*  
+       - *Voet & Voet – Biochemistry*  
+   - Domains of life and evolutionary foundations  
+       - *Lehninger*  
+       - *Berg, Tymoczko & Gatto – Biochemistry*  
+   - Overlap: Physical chemistry of membranes and diffusion (*Atkins*)  
+
+2. **Chemical and Physical Principles**
+   - Biomolecules: structure and functional groups  
+       - *Lehninger*  
+       - *Hammes – Physical Chemistry for the Biological Sciences*  
+   - Dynamic steady state vs equilibrium  
+       - *Lehninger*  
+       - *Callen – Thermodynamics*  
+   - Overlap: Thermodynamics and free energy in metabolism (*Atkins*)  
+
+3. **Water and Aqueous Chemistry**
+   - Hydrogen bonding, solvation, and weak interactions  
+       - *Lehninger*  
+       - *Hammes*  
+   - Ionization, pH, and buffers (Henderson–Hasselbalch)  
+       - *Lehninger*  
+       - *Hammes*  
+   - Overlap: pKa and buffer theory (*Atkins*)  
+
+---
+
+## **II. Structure and Catalysis**
+1. **Amino Acids, Peptides, and Proteins**
+   - Structure, properties, and classification of amino acids  
+       - *Lehninger*  
+       - *Berg*  
+   - Peptides and covalent modifications  
+       - *Lehninger*  
+
+2. **Protein Structure**
+   - Primary, secondary, tertiary, quaternary structures  
+       - *Lehninger*  
+       - *Cantor & Schimmel – Biophysical Chemistry*  
+   - Protein folding and misfolding (prions)  
+       - *Lehninger*  
+
+3. **Protein Function**
+   - Ligand binding and cooperativity (e.g., hemoglobin)  
+       - *Lehninger*  
+       - *Hammes*  
+   - Immunoglobulins and immune system basics  
+       - *Lehninger*  
+
+4. **Enzymes**
+   - Catalytic principles and mechanisms  
+       - *Lehninger*  
+       - *Hammes*  
+   - Michaelis–Menten kinetics and inhibition  
+       - *Lehninger*  
+       - *Hammes*  
+   - Transition-state theory  
+       - *Hammes*  
+       - *Atkins – Physical Chemistry*  
+   - Overlap: Reaction rate theory and thermodynamics of activation (*Hammes*, *Atkins*)  
+
+5. **Carbohydrates and Glycobiology**
+   - Monosaccharides, polysaccharides, glycoconjugates  
+       - *Lehninger*  
+       - *Voet & Voet*  
+
+6. **Nucleotides and Nucleic Acids**
+   - Nucleotide structure, nucleic acids, DNA/RNA properties  
+       - *Lehninger*  
+
+7. **Lipids**
+   - Fatty acids, triacylglycerols, phospholipids, steroids  
+       - *Lehninger*  
+
+8. **Biological Membranes and Transport**
+   - Membrane architecture and transport mechanisms  
+       - *Lehninger*  
+       - *Hille – Ion Channels of Excitable Membranes*  
+   - Overlap: Nernst equation, ΔG of ion transport (*Hammes*)  
+
+9. **Biosignaling**
+   - Receptor types, second messengers, signaling cascades  
+       - *Lehninger*  
+
+---
+
+## **III. Bioenergetics and Metabolism**
+1. **Principles of Bioenergetics**
+   - Free energy changes in biological reactions  
+       - *Lehninger*  
+       - *Hammes*  
+   - Phosphoryl group transfers and ATP hydrolysis  
+       - *Lehninger*  
+   - Overlap: Gibbs energy, coupling, and redox potentials (*Atkins*, *Hammes*)  
+
+2. **Carbohydrate Metabolism**
+   - Glycolysis and gluconeogenesis  
+       - *Lehninger*  
+   - Pentose phosphate pathway  
+       - *Lehninger*  
+
+3. **Metabolic Regulation**
+   - Allosteric control and hormonal regulation  
+       - *Lehninger*  
+       - *Hammes*  
+
+4. **Citric Acid Cycle**
+   - Reactions, energy yield, and regulation  
+       - *Lehninger*  
+   - Anaplerotic and amphibolic roles  
+       - *Lehninger*  
+
+5. **Lipid Metabolism**
+   - Fatty acid oxidation and ketone bodies  
+       - *Lehninger*  
+   - Lipid biosynthesis and regulation  
+       - *Lehninger*  
+
+6. **Amino Acid Metabolism**
+   - Catabolism and nitrogen disposal (urea cycle)  
+       - *Lehninger*  
+   - Biosynthesis of amino acids  
+       - *Lehninger*  
+
+7. **Oxidative Phosphorylation and Photophosphorylation**
+   - Electron transport chains and chemiosmosis  
+       - *Lehninger*  
+       - *Nicholls & Ferguson – Bioenergetics*  
+   - Overlap: Proton-motive force and ΔμH+ (*Hammes*)  
+
+8. **Integration of Metabolism**
+   - Tissue-specific pathways and hormonal control  
+       - *Lehninger*  
+
+---
+
+## **IV. Information Pathways**
+1. **Genes and Chromosomes**
+   - DNA structure and chromatin organization  
+       - *Lehninger*  
+
+2. **DNA Metabolism**
+   - Replication, repair, and recombination  
+       - *Lehninger*  
+       - *Watson – Molecular Biology of the Gene*  
+
+3. **RNA Metabolism**
+   - Transcription and RNA processing  
+       - *Lehninger*  
+
+4. **Protein Metabolism**
+   - Translation and post-translational modifications  
+       - *Lehninger*  
+
+5. **Regulation of Gene Expression**
+   - Prokaryotic and eukaryotic systems  
+       - *Lehninger*  
+       - *Alberts – Molecular Biology of the Cell*  
+
+---
+
+### **Key Overlap Points**
+- **Physical Chemistry**: Thermodynamics (ΔG, ΔH), electrochemistry (Nernst), kinetics  
+- **Cell Biology**: Membranes, organelles, signal transduction, cytoskeletal motors  
+- **Analytical Chemistry**: Spectroscopy, calorimetry, chromatography in biomolecule study  
+
+---
