@@ -722,3 +722,13 @@ This outline of biochemistry is from ChatGPT, here is a link to the TOC of a pro
 - **Analytical Chemistry**: Spectroscopy, calorimetry, chromatography in biomolecule study  
 
 ---
+
+
+
+---
+
+# **Organic Chemistry**
+
+[📄 View PDF: McMurry – Organic Chemistry, 10th Edition (TOC/Front Matter Only)](/writeups/sources/McMurry_10thEd_FrontMatter.pdf)
+
+*File location:* `writeups/sources/McMurry_10thEd_FrontMatter.pdf`
